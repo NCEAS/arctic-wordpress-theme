@@ -1,0 +1,2175 @@
+@charset "UTF-8";
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: TinyMCE Editor
+
+This stylesheet is loaded automatically by Wordpress when compiled
+and placed in the root theme directory folder as editor-style.css
+
+For more info, check out the codex:
+http://codex.wordpress.org/Editor_Style
+
+******************************************************************/
+/* Wrap the entire post style inside the TinyMCE selector, as suggested
+here http://codex.wordpress.org/Function_Reference/add_editor_style */
+body#tinymce.wp-editor {
+  /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+  /* ==========================================================================
+     HTML5 display definitions
+     ========================================================================== */
+  /**
+   * Correct `block` display not defined in IE 8/9.
+   */
+  /**
+   * Correct `inline-block` display not defined in IE 8/9.
+   */
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  /**
+   * Address `[hidden]` styling not present in IE 8/9.
+   * Hide the `template` element in IE, Safari, and Firefox < 22.
+   */
+  /* ==========================================================================
+     Base
+     ========================================================================== */
+  /**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS text size adjust after orientation change, without disabling
+   *    user zoom.
+   */
+  /**
+   * Remove default margin.
+   */
+  /* ==========================================================================
+     Links
+     ========================================================================== */
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+  /**
+   * Address `outline` inconsistency between Chrome and other browsers.
+   */
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address styling not present in IE 8/9, Safari 5, and Chrome.
+   */
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address styling not present in Safari 5 and Chrome.
+   */
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+  /*
+   * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
+  */
+  /*
+   * Addresses margins set differently in IE6/7.
+   */
+  /**
+   * Correct font family set oddly in Safari 5 and Chrome.
+   */
+  /**
+   * Improve readability of pre-formatted text in all browsers.
+   */
+  /**
+   * Set consistent quote types.
+   */
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+  /* ==========================================================================
+    Lists
+  ========================================================================== */
+  /*
+   * Addresses margins set differently in IE6/7.
+   */
+  /*
+   * Addresses paddings set differently in IE6/7.
+   */
+  /*
+   * Corrects list images handled incorrectly in IE7.
+   */
+  /* ==========================================================================
+    Embedded content
+  ========================================================================== */
+  /**
+   * Remove border when inside `a` element in IE 8/9.
+   */
+  /**
+   * Correct overflow displayed oddly in IE 9.
+   */
+  /* ==========================================================================
+     Figures
+     ========================================================================== */
+  /**
+   * Address margin not present in IE 8/9 and Safari 5.
+   */
+  /* ==========================================================================
+     Forms
+     ========================================================================== */
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+  /**
+   * 1. Correct font family not being inherited in all browsers.
+   * 2. Correct font size not being inherited in all browsers.
+   * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+   * Correct `select` style inheritance in Firefox 4+ and Opera.
+   */
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  /**
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  /**
+   * Remove inner padding and search cancel button in Safari 5 and Chrome
+   * on OS X.
+   */
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+  /**
+   * 1. Remove default vertical scrollbar in IE 8/9.
+   * 2. Improve readability and alignment in all browsers.
+   */
+  /* ==========================================================================
+     Tables
+     ========================================================================== */
+  /**
+   * Remove most spacing between table cells.
+   */
+  /*
+  use the best ampersand
+  http://simplebits.com/notebook/2008/08/14/ampersands-2/
+  */
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Variables
+  
+  Here is where we declare all our variables like colors, fonts,
+  base values, and defaults. We want to make sure this file ONLY
+  contains variables that way our files don't get all messy.
+  No one likes a mess.
+  
+  ******************************************************************/
+  /*********************
+  COLORS
+  Need help w/ choosing your colors? Try this site out:
+  http://0to255.com/
+  *********************/
+  /*
+  Here's a great tutorial on how to
+  use color variables properly:
+  http://sachagreif.com/sass-color-variables/
+  */
+  /************************
+  PADDING AND SPACING
+  *************************/
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Typography
+  
+  Need to import a font or set of icons for your site? Drop them in
+  here or just use this to establish your typographical grid. Or not.
+  Do whatever you want to...GOSH!
+  
+  Helpful Articles:
+  http://trentwalton.com/2012/06/19/fluid-type/
+  http://ia.net/blog/responsive-typography-the-basics/
+  http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+  
+  ******************************************************************/
+  /*********************
+  FONT FACE (IN YOUR FACE)
+  *********************/
+  /*  To embed your own fonts, use this syntax
+    and place your fonts inside the
+    library/fonts folder. For more information
+    on embedding fonts, go to:
+    http://www.fontsquirrel.com/
+    Be sure to remove the comment brackets.
+  */
+  /*  @font-face {
+        font-family: 'Font Name';
+        src: url('library/fonts/font-name.eot');
+        src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+               url('library/fonts/font-name.woff') format('woff'),
+               url('library/fonts/font-name.ttf') format('truetype'),
+               url('library/fonts/font-name.svg#font-name') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+  */
+  /*!
+   *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+   *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+   */
+  /* FONT PATH
+   * -------------------------- */
+  /* makes the font 33% larger relative to the icon container */
+  /* Deprecated as of 4.4.0 */
+  /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+     readers do not read off random characters that represent icons */
+  /*
+  The following is based of Typebase:
+  https://github.com/devinhunt/typebase.css
+  I've edited it a bit, but it's a nice starting point.
+  */
+  /*
+  some nice typographical defaults
+  more here: http://www.newnet-soft.com/blog/csstypography
+  */
+  /************************************************
+   ICONS
+  ************************************************/
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Sass Functions
+  
+  You can do a lot of really cool things in Sass. Functions help you
+  make repeated actions a lot easier. They are really similar to mixins,
+  but can be used for so much more.
+  
+  Anyway, keep them all in here so it's easier to find when you're
+  looking for one.
+  
+  For more info on functions, go here:
+  http://sass-lang.com/documentation/Sass/Script/Functions.html
+  
+  ******************************************************************/
+  /*********************
+  COLOR FUNCTIONS
+  These are helpful when you're working
+  with shadows and such things. It's essentially
+  a quicker way to write RGBA.
+  
+  Example:
+  box-shadow: 0 0 4px black(0.3);
+  compiles to:
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  *********************/
+  /*********************
+  RESPONSIVE HELPER FUNCTION
+  If you're creating a responsive site, then
+  you've probably already read
+  Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
+  
+  Here's a nice little helper function for calculating
+  target / context
+  as mentioned in that book.
+  
+  Example:
+  width: cp(650px, 1000px);
+  or
+  width: calc-percent(650px, 1000px);
+  both compile to:
+  width: 65%;
+  *********************/
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Mixins Stylesheet
+  
+  This is where you can take advantage of Sass' great features: Mixins.
+  I won't go in-depth on how they work exactly,
+  there are a few articles below that will help do that. What I will
+  tell you is that this will help speed up simple changes like
+  changing a color or adding CSS3 techniques gradients.
+  
+  A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+  remember less is more.
+  
+  Helpful:
+  http://sachagreif.com/useful-sass-mixins/
+  http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+  http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+  
+  ******************************************************************/
+  /*********************
+  TRANSITION
+  *********************/
+  /*
+  I totally rewrote this to be cleaner and easier to use.
+  You'll need to be using Sass 3.2+ for these to work.
+  Thanks to @anthonyshort for the inspiration on these.
+  USAGE: @include transition(all 0.2s ease-in-out);
+  */
+  /*********************
+  CSS3 GRADIENTS
+  Be careful with these since they can
+  really slow down your CSS. Don't overdo it.
+  *********************/
+  /* @include css-gradient(#dfdfdf,#f8f8f8); */
+  /*********************
+  BOX SIZING
+  *********************/
+  /* @include box-sizing(border-box); */
+  /* NOTE: value of "padding-box" is only supported in Gecko. So
+  probably best not to use it. I mean, were you going to anyway? */
+  width: 731px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  /*********************
+	LINK STYLES
+	*********************/
+  /******************************************************************
+  H1, H2, H3, H4, H5 STYLES
+  ******************************************************************/
+  padding: 1.5em 1.5em 0;
+  /*********************
+  LARGER MOBILE DEVICES
+  This is for devices like the Galaxy Note or something that's
+  larger than an iPhone but smaller than a tablet. Let's call them
+  tweeners.
+  *********************/ }
+  body#tinymce.wp-editor article,
+  body#tinymce.wp-editor aside,
+  body#tinymce.wp-editor details,
+  body#tinymce.wp-editor figcaption,
+  body#tinymce.wp-editor figure,
+  body#tinymce.wp-editor footer,
+  body#tinymce.wp-editor header,
+  body#tinymce.wp-editor hgroup,
+  body#tinymce.wp-editor main,
+  body#tinymce.wp-editor nav,
+  body#tinymce.wp-editor section,
+  body#tinymce.wp-editor summary {
+    display: block; }
+  body#tinymce.wp-editor audio,
+  body#tinymce.wp-editor canvas,
+  body#tinymce.wp-editor video {
+    display: inline-block; }
+  body#tinymce.wp-editor audio:not([controls]) {
+    display: none;
+    height: 0; }
+  body#tinymce.wp-editor [hidden],
+  body#tinymce.wp-editor template {
+    display: none; }
+  body#tinymce.wp-editor html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */ }
+  body#tinymce.wp-editor body {
+    margin: 0; }
+  body#tinymce.wp-editor a {
+    background: transparent; }
+  body#tinymce.wp-editor a:focus {
+    outline: thin dotted; }
+  body#tinymce.wp-editor a:active,
+  body#tinymce.wp-editor a:hover {
+    outline: 0; }
+  body#tinymce.wp-editor h1 {
+    font-size: 2em;
+    margin: 0.67em 0; }
+  body#tinymce.wp-editor abbr[title] {
+    border-bottom: 1px dotted; }
+  body#tinymce.wp-editor b,
+  body#tinymce.wp-editor strong,
+  body#tinymce.wp-editor .strong {
+    font-weight: bold; }
+  body#tinymce.wp-editor dfn,
+  body#tinymce.wp-editor em,
+  body#tinymce.wp-editor .em {
+    font-style: italic; }
+  body#tinymce.wp-editor hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0; }
+  body#tinymce.wp-editor p {
+    -webkit-hyphens: auto;
+    -epub-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  body#tinymce.wp-editor pre {
+    margin: 0; }
+  body#tinymce.wp-editor code,
+  body#tinymce.wp-editor kbd,
+  body#tinymce.wp-editor pre,
+  body#tinymce.wp-editor samp {
+    font-family: monospace, serif;
+    font-size: 1em; }
+  body#tinymce.wp-editor pre {
+    white-space: pre-wrap; }
+  body#tinymce.wp-editor q {
+    quotes: "\201C" "\201D" "\2018" "\2019"; }
+  body#tinymce.wp-editor q:before,
+  body#tinymce.wp-editor q:after {
+    content: '';
+    content: none; }
+  body#tinymce.wp-editor small, body#tinymce.wp-editor .small {
+    font-size: 75%; }
+  body#tinymce.wp-editor sub,
+  body#tinymce.wp-editor sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  body#tinymce.wp-editor sup {
+    top: -0.5em; }
+  body#tinymce.wp-editor sub {
+    bottom: -0.25em; }
+  body#tinymce.wp-editor dl,
+  body#tinymce.wp-editor menu,
+  body#tinymce.wp-editor ol,
+  body#tinymce.wp-editor ul {
+    margin: 1em 0; }
+  body#tinymce.wp-editor dd {
+    margin: 0; }
+  body#tinymce.wp-editor menu {
+    padding: 0 0 0 40px; }
+  body#tinymce.wp-editor ol,
+  body#tinymce.wp-editor ul {
+    padding: 0;
+    list-style-type: none; }
+  body#tinymce.wp-editor nav ul,
+  body#tinymce.wp-editor nav ol {
+    list-style: none;
+    list-style-image: none; }
+  body#tinymce.wp-editor img {
+    border: 0; }
+  body#tinymce.wp-editor svg:not(:root) {
+    overflow: hidden; }
+  body#tinymce.wp-editor figure {
+    margin: 0; }
+  body#tinymce.wp-editor fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em; }
+  body#tinymce.wp-editor legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  body#tinymce.wp-editor button,
+  body#tinymce.wp-editor input,
+  body#tinymce.wp-editor select,
+  body#tinymce.wp-editor textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 2 */
+    margin: 0;
+    /* 3 */ }
+  body#tinymce.wp-editor button,
+  body#tinymce.wp-editor input {
+    line-height: normal; }
+  body#tinymce.wp-editor button,
+  body#tinymce.wp-editor select {
+    text-transform: none; }
+  body#tinymce.wp-editor button,
+  body#tinymce.wp-editor html input[type="button"],
+  body#tinymce.wp-editor input[type="reset"],
+  body#tinymce.wp-editor input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */ }
+  body#tinymce.wp-editor button[disabled],
+  body#tinymce.wp-editor html input[disabled] {
+    cursor: default; }
+  body#tinymce.wp-editor input[type="checkbox"],
+  body#tinymce.wp-editor input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */ }
+  body#tinymce.wp-editor input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box; }
+  body#tinymce.wp-editor input[type="search"]::-webkit-search-cancel-button,
+  body#tinymce.wp-editor input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+  body#tinymce.wp-editor button::-moz-focus-inner,
+  body#tinymce.wp-editor input::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  body#tinymce.wp-editor textarea {
+    overflow: auto;
+    /* 1 */
+    vertical-align: top;
+    /* 2 */ }
+  body#tinymce.wp-editor table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  body#tinymce.wp-editor * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  body#tinymce.wp-editor .image-replacement,
+  body#tinymce.wp-editor .ir {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+  body#tinymce.wp-editor .clearfix, body#tinymce.wp-editor .cf {
+    zoom: 1; }
+    body#tinymce.wp-editor .clearfix:before, body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:before, body#tinymce.wp-editor .cf:after {
+      content: "";
+      display: table; }
+    body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:after {
+      clear: both; }
+  body#tinymce.wp-editor span.amp {
+    font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+    font-style: italic; }
+@font-face {
+  body#tinymce.wp-editor {
+    font-family: "Aller";
+    src: url("../../library/fonts/Aller_Rg.ttf");
+    font-weight: normal;
+    font-style: normal; } }
+@font-face {
+  body#tinymce.wp-editor {
+    font-family: "Aller";
+    src: url("../../library/fonts/Aller_It.ttf");
+    font-weight: normal;
+    font-style: italic; } }
+@font-face {
+  body#tinymce.wp-editor {
+    font-family: "Aller";
+    src: url("../../library/fonts/Aller_Bd.ttf");
+    font-weight: bold;
+    font-style: normal; } }
+@font-face {
+  body#tinymce.wp-editor {
+    font-family: "Aller";
+    src: url("../../library/fonts/Aller_BdIt.ttf");
+    font-weight: bold;
+    font-style: italic; } }
+@font-face {
+  body#tinymce.wp-editor {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal; } }
+  body#tinymce.wp-editor .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  body#tinymce.wp-editor .fa-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -15%; }
+  body#tinymce.wp-editor .fa-2x {
+    font-size: 2em; }
+  body#tinymce.wp-editor .fa-3x {
+    font-size: 3em; }
+  body#tinymce.wp-editor .fa-4x {
+    font-size: 4em; }
+  body#tinymce.wp-editor .fa-5x {
+    font-size: 5em; }
+  body#tinymce.wp-editor .fa-fw {
+    width: 1.28571em;
+    text-align: center; }
+  body#tinymce.wp-editor .fa-ul {
+    padding-left: 0;
+    margin-left: 2.14286em;
+    list-style-type: none; }
+    body#tinymce.wp-editor .fa-ul > li {
+      position: relative; }
+  body#tinymce.wp-editor .fa-li {
+    position: absolute;
+    left: -2.14286em;
+    width: 2.14286em;
+    top: 0.14286em;
+    text-align: center; }
+    body#tinymce.wp-editor .fa-li.fa-lg {
+      left: -1.85714em; }
+  body#tinymce.wp-editor .fa-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eee;
+    border-radius: .1em; }
+  body#tinymce.wp-editor .fa-pull-left {
+    float: left; }
+  body#tinymce.wp-editor .fa-pull-right {
+    float: right; }
+  body#tinymce.wp-editor .fa.fa-pull-left {
+    margin-right: .3em; }
+  body#tinymce.wp-editor .fa.fa-pull-right {
+    margin-left: .3em; }
+  body#tinymce.wp-editor .pull-right {
+    float: right; }
+  body#tinymce.wp-editor .pull-left {
+    float: left; }
+  body#tinymce.wp-editor .fa.pull-left {
+    margin-right: .3em; }
+  body#tinymce.wp-editor .fa.pull-right {
+    margin-left: .3em; }
+  body#tinymce.wp-editor .fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear; }
+  body#tinymce.wp-editor .fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8); }
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+  body#tinymce.wp-editor .fa-rotate-90 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  body#tinymce.wp-editor .fa-rotate-180 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  body#tinymce.wp-editor .fa-rotate-270 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); }
+  body#tinymce.wp-editor .fa-flip-horizontal {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1); }
+  body#tinymce.wp-editor .fa-flip-vertical {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1); }
+  body#tinymce.wp-editor :root .fa-rotate-90,
+  body#tinymce.wp-editor :root .fa-rotate-180,
+  body#tinymce.wp-editor :root .fa-rotate-270,
+  body#tinymce.wp-editor :root .fa-flip-horizontal,
+  body#tinymce.wp-editor :root .fa-flip-vertical {
+    filter: none; }
+  body#tinymce.wp-editor .fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle; }
+  body#tinymce.wp-editor .fa-stack-1x, body#tinymce.wp-editor .fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  body#tinymce.wp-editor .fa-stack-1x {
+    line-height: inherit; }
+  body#tinymce.wp-editor .fa-stack-2x {
+    font-size: 2em; }
+  body#tinymce.wp-editor .fa-inverse {
+    color: #fff; }
+  body#tinymce.wp-editor .fa-glass:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-music:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-search:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-envelope-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-heart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-star:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-star-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-user:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-film:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-th-large:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-th:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-th-list:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-check:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-remove:before,
+  body#tinymce.wp-editor .fa-close:before,
+  body#tinymce.wp-editor .fa-times:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-search-plus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-search-minus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-power-off:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-signal:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gear:before,
+  body#tinymce.wp-editor .fa-cog:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-trash-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-home:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-clock-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-road:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-download:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-o-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-o-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-inbox:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-play-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-rotate-right:before,
+  body#tinymce.wp-editor .fa-repeat:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-refresh:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-list-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-lock:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flag:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-headphones:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-volume-off:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-volume-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-volume-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-qrcode:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-barcode:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tag:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tags:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-book:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bookmark:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-print:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-camera:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-font:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bold:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-italic:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-text-height:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-text-width:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-align-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-align-center:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-align-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-align-justify:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-list:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dedent:before,
+  body#tinymce.wp-editor .fa-outdent:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-indent:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-video-camera:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-photo:before,
+  body#tinymce.wp-editor .fa-image:before,
+  body#tinymce.wp-editor .fa-picture-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pencil:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-map-marker:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-adjust:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tint:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-edit:before,
+  body#tinymce.wp-editor .fa-pencil-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-share-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-check-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrows:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-step-backward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fast-backward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-backward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-play:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pause:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stop:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-forward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fast-forward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-step-forward:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-eject:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plus-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-minus-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-times-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-check-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-question-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-info-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-crosshairs:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-times-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-check-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ban:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mail-forward:before,
+  body#tinymce.wp-editor .fa-share:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-expand:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-compress:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-minus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-asterisk:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-exclamation-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gift:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-leaf:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fire:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-eye:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-eye-slash:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-warning:before,
+  body#tinymce.wp-editor .fa-exclamation-triangle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plane:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-random:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-comment:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-magnet:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-retweet:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shopping-cart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-folder:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-folder-open:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrows-v:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrows-h:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bar-chart-o:before,
+  body#tinymce.wp-editor .fa-bar-chart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-twitter-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-facebook-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-camera-retro:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-key:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gears:before,
+  body#tinymce.wp-editor .fa-cogs:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-comments:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-thumbs-o-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-thumbs-o-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-star-half:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-heart-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sign-out:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-linkedin-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-thumb-tack:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-external-link:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sign-in:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-trophy:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-github-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-upload:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-lemon-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-phone:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bookmark-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-phone-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-twitter:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-facebook-f:before,
+  body#tinymce.wp-editor .fa-facebook:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-github:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-unlock:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-credit-card:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-feed:before,
+  body#tinymce.wp-editor .fa-rss:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hdd-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bullhorn:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bell:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-certificate:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-o-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-o-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-o-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-o-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-globe:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wrench:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tasks:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-filter:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-briefcase:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrows-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-group:before,
+  body#tinymce.wp-editor .fa-users:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chain:before,
+  body#tinymce.wp-editor .fa-link:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cloud:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flask:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cut:before,
+  body#tinymce.wp-editor .fa-scissors:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-copy:before,
+  body#tinymce.wp-editor .fa-files-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paperclip:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-save:before,
+  body#tinymce.wp-editor .fa-floppy-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-navicon:before,
+  body#tinymce.wp-editor .fa-reorder:before,
+  body#tinymce.wp-editor .fa-bars:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-list-ul:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-list-ol:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-strikethrough:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-underline:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-table:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-magic:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-truck:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pinterest:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pinterest-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-google-plus-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-google-plus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-money:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-caret-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-caret-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-caret-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-caret-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-columns:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-unsorted:before,
+  body#tinymce.wp-editor .fa-sort:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-down:before,
+  body#tinymce.wp-editor .fa-sort-desc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-up:before,
+  body#tinymce.wp-editor .fa-sort-asc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-envelope:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-linkedin:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-rotate-left:before,
+  body#tinymce.wp-editor .fa-undo:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-legal:before,
+  body#tinymce.wp-editor .fa-gavel:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dashboard:before,
+  body#tinymce.wp-editor .fa-tachometer:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-comment-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-comments-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flash:before,
+  body#tinymce.wp-editor .fa-bolt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sitemap:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-umbrella:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paste:before,
+  body#tinymce.wp-editor .fa-clipboard:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-lightbulb-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-exchange:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cloud-download:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cloud-upload:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-user-md:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stethoscope:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-suitcase:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bell-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-coffee:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cutlery:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-text-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-building-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hospital-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ambulance:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-medkit:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fighter-jet:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-beer:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-h-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plus-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-double-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-double-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-double-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-double-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angle-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-desktop:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-laptop:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tablet:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mobile-phone:before,
+  body#tinymce.wp-editor .fa-mobile:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-quote-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-quote-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-spinner:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mail-reply:before,
+  body#tinymce.wp-editor .fa-reply:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-github-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-folder-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-folder-open-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-smile-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-frown-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-meh-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gamepad:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-keyboard-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flag-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flag-checkered:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-terminal:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-code:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mail-reply-all:before,
+  body#tinymce.wp-editor .fa-reply-all:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-star-half-empty:before,
+  body#tinymce.wp-editor .fa-star-half-full:before,
+  body#tinymce.wp-editor .fa-star-half-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-location-arrow:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-crop:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-code-fork:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-unlink:before,
+  body#tinymce.wp-editor .fa-chain-broken:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-question:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-info:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-exclamation:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-superscript:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-subscript:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-eraser:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-puzzle-piece:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-microphone:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-microphone-slash:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shield:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fire-extinguisher:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-rocket:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-maxcdn:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-circle-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-circle-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-circle-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chevron-circle-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-html5:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-css3:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-anchor:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-unlock-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bullseye:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ellipsis-h:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ellipsis-v:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-rss-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-play-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ticket:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-minus-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-minus-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-level-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-level-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-check-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pencil-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-external-link-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-share-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-compass:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-down:before,
+  body#tinymce.wp-editor .fa-caret-square-o-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-up:before,
+  body#tinymce.wp-editor .fa-caret-square-o-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-right:before,
+  body#tinymce.wp-editor .fa-caret-square-o-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-euro:before,
+  body#tinymce.wp-editor .fa-eur:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gbp:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dollar:before,
+  body#tinymce.wp-editor .fa-usd:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-rupee:before,
+  body#tinymce.wp-editor .fa-inr:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cny:before,
+  body#tinymce.wp-editor .fa-rmb:before,
+  body#tinymce.wp-editor .fa-yen:before,
+  body#tinymce.wp-editor .fa-jpy:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ruble:before,
+  body#tinymce.wp-editor .fa-rouble:before,
+  body#tinymce.wp-editor .fa-rub:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-won:before,
+  body#tinymce.wp-editor .fa-krw:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bitcoin:before,
+  body#tinymce.wp-editor .fa-btc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-text:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-alpha-asc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-alpha-desc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-amount-asc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-amount-desc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-numeric-asc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sort-numeric-desc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-thumbs-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-thumbs-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-youtube-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-youtube:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-xing:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-xing-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-youtube-play:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dropbox:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stack-overflow:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-instagram:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-flickr:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-adn:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bitbucket:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bitbucket-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tumblr:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tumblr-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-long-arrow-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-long-arrow-up:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-long-arrow-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-long-arrow-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-apple:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-windows:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-android:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-linux:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dribbble:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-skype:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-foursquare:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-trello:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-female:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-male:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gittip:before,
+  body#tinymce.wp-editor .fa-gratipay:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sun-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-moon-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-archive:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bug:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-vk:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-weibo:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-renren:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pagelines:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stack-exchange:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-o-right:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-arrow-circle-o-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-left:before,
+  body#tinymce.wp-editor .fa-caret-square-o-left:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dot-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wheelchair:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-vimeo-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-turkish-lira:before,
+  body#tinymce.wp-editor .fa-try:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plus-square-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-space-shuttle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-slack:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-envelope-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wordpress:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-openid:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-institution:before,
+  body#tinymce.wp-editor .fa-bank:before,
+  body#tinymce.wp-editor .fa-university:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mortar-board:before,
+  body#tinymce.wp-editor .fa-graduation-cap:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-yahoo:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-google:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-reddit:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-reddit-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stumbleupon-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stumbleupon:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-delicious:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-digg:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pied-piper:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pied-piper-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-drupal:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-joomla:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-language:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fax:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-building:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-child:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paw:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-spoon:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cube:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cubes:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-behance:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-behance-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-steam:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-steam-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-recycle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-automobile:before,
+  body#tinymce.wp-editor .fa-car:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cab:before,
+  body#tinymce.wp-editor .fa-taxi:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tree:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-spotify:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-deviantart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-soundcloud:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-database:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-pdf-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-word-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-excel-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-powerpoint-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-photo-o:before,
+  body#tinymce.wp-editor .fa-file-picture-o:before,
+  body#tinymce.wp-editor .fa-file-image-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-zip-o:before,
+  body#tinymce.wp-editor .fa-file-archive-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-sound-o:before,
+  body#tinymce.wp-editor .fa-file-audio-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-movie-o:before,
+  body#tinymce.wp-editor .fa-file-video-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-file-code-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-vine:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-codepen:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-jsfiddle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-life-bouy:before,
+  body#tinymce.wp-editor .fa-life-buoy:before,
+  body#tinymce.wp-editor .fa-life-saver:before,
+  body#tinymce.wp-editor .fa-support:before,
+  body#tinymce.wp-editor .fa-life-ring:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-circle-o-notch:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ra:before,
+  body#tinymce.wp-editor .fa-rebel:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ge:before,
+  body#tinymce.wp-editor .fa-empire:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-git-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-git:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-y-combinator-square:before,
+  body#tinymce.wp-editor .fa-yc-square:before,
+  body#tinymce.wp-editor .fa-hacker-news:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tencent-weibo:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-qq:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wechat:before,
+  body#tinymce.wp-editor .fa-weixin:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-send:before,
+  body#tinymce.wp-editor .fa-paper-plane:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-send-o:before,
+  body#tinymce.wp-editor .fa-paper-plane-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-history:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-circle-thin:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-header:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paragraph:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sliders:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-share-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-share-alt-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bomb:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-soccer-ball-o:before,
+  body#tinymce.wp-editor .fa-futbol-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tty:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-binoculars:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-plug:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-slideshare:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-twitch:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-yelp:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-newspaper-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wifi:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calculator:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paypal:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-google-wallet:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-visa:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-mastercard:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-discover:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-amex:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-paypal:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-stripe:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bell-slash:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bell-slash-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-trash:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-copyright:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-at:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-eyedropper:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-paint-brush:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-birthday-cake:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-area-chart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pie-chart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-line-chart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-lastfm:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-lastfm-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-off:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-toggle-on:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bicycle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ioxhost:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-angellist:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shekel:before,
+  body#tinymce.wp-editor .fa-sheqel:before,
+  body#tinymce.wp-editor .fa-ils:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-meanpath:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-buysellads:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-connectdevelop:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-dashcube:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-forumbee:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-leanpub:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sellsy:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shirtsinbulk:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-simplybuilt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-skyatlas:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cart-plus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cart-arrow-down:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-diamond:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-ship:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-user-secret:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-motorcycle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-street-view:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-heartbeat:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-venus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mars:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mercury:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-intersex:before,
+  body#tinymce.wp-editor .fa-transgender:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-transgender-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-venus-double:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mars-double:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-venus-mars:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mars-stroke:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mars-stroke-v:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mars-stroke-h:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-neuter:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-genderless:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-facebook-official:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pinterest-p:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-whatsapp:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-server:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-user-plus:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-user-times:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hotel:before,
+  body#tinymce.wp-editor .fa-bed:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-viacoin:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-train:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-subway:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-medium:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-yc:before,
+  body#tinymce.wp-editor .fa-y-combinator:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-optin-monster:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-opencart:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-expeditedssl:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-battery-4:before,
+  body#tinymce.wp-editor .fa-battery-full:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-battery-3:before,
+  body#tinymce.wp-editor .fa-battery-three-quarters:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-battery-2:before,
+  body#tinymce.wp-editor .fa-battery-half:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-battery-1:before,
+  body#tinymce.wp-editor .fa-battery-quarter:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-battery-0:before,
+  body#tinymce.wp-editor .fa-battery-empty:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mouse-pointer:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-i-cursor:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-object-group:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-object-ungroup:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sticky-note:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-sticky-note-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-jcb:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-cc-diners-club:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-clone:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-balance-scale:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hourglass-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hourglass-1:before,
+  body#tinymce.wp-editor .fa-hourglass-start:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hourglass-2:before,
+  body#tinymce.wp-editor .fa-hourglass-half:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hourglass-3:before,
+  body#tinymce.wp-editor .fa-hourglass-end:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hourglass:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-grab-o:before,
+  body#tinymce.wp-editor .fa-hand-rock-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-stop-o:before,
+  body#tinymce.wp-editor .fa-hand-paper-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-scissors-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-lizard-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-spock-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-pointer-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hand-peace-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-trademark:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-registered:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-creative-commons:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gg:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-gg-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tripadvisor:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-odnoklassniki:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-odnoklassniki-square:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-get-pocket:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-wikipedia-w:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-safari:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-chrome:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-firefox:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-opera:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-internet-explorer:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-tv:before,
+  body#tinymce.wp-editor .fa-television:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-contao:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-500px:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-amazon:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar-plus-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar-minus-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar-times-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-calendar-check-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-industry:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-map-pin:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-map-signs:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-map-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-map:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-commenting:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-commenting-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-houzz:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-vimeo:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-black-tie:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fonticons:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-reddit-alien:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-edge:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-credit-card-alt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-codiepie:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-modx:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-fort-awesome:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-usb:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-product-hunt:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-mixcloud:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-scribd:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pause-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-pause-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stop-circle:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-stop-circle-o:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shopping-bag:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-shopping-basket:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-hashtag:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bluetooth:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-bluetooth-b:before {
+    content: ""; }
+  body#tinymce.wp-editor .fa-percent:before {
+    content: ""; }
+  body#tinymce.wp-editor p {
+    -ms-word-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    -webkit-font-feature-settings: "liga", "dlig";
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig"; }
+  body#tinymce.wp-editor .smaller {
+    font-size: .8em; }
+  body#tinymce.wp-editor .subtle {
+    color: #999; }
+  body#tinymce.wp-editor .icon {
+    margin-right: 5px;
+    margin-left: 5px; }
+  body#tinymce.wp-editor img.icon,
+  body#tinymce.wp-editor .entry-content img.icon {
+    display: inline;
+    margin-bottom: 0px; }
+  body#tinymce.wp-editor a:link.btn,
+  body#tinymce.wp-editor a.btn,
+  body#tinymce.wp-editor .btn {
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    border-radius: 4px;
+    color: #146660;
+    -webkit-tap-highlight-color: #146660;
+    font-weight: bold; }
+    body#tinymce.wp-editor a:link.btn.primary,
+    body#tinymce.wp-editor a.btn.primary,
+    body#tinymce.wp-editor .btn.primary {
+      background-color: #0dff93; }
+  body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
+    color: #3341A7;
+    /* on hover */
+    /* on click */ }
+    body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
+      color: #146660; }
+    body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+  body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+    text-rendering: optimizelegibility;
+    font-weight: 500; }
+    body#tinymce.wp-editor h1 a, body#tinymce.wp-editor .h1 a, body#tinymce.wp-editor h2 a, body#tinymce.wp-editor .h2 a, body#tinymce.wp-editor h3 a, body#tinymce.wp-editor .h3 a, body#tinymce.wp-editor h4 a, body#tinymce.wp-editor .h4 a, body#tinymce.wp-editor h5 a, body#tinymce.wp-editor .h5 a {
+      text-decoration: none; }
+  body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1 {
+    font-size: 2.5em;
+    line-height: 1.333em; }
+  body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2 {
+    font-size: 1.75em;
+    line-height: 1.4em;
+    margin-bottom: 0.375em; }
+  body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3 {
+    font-size: 1.125em; }
+  body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4 {
+    font-size: 1.1em;
+    font-weight: 700; }
+  body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+    font-size: 0.846em;
+    line-height: 2.09em;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  body#tinymce.wp-editor p {
+    margin: 0 0 1.5em; }
+  body#tinymce.wp-editor table {
+    width: 100%;
+    border: 1px solid #eaedf2;
+    margin-bottom: 1.5em; }
+    body#tinymce.wp-editor table caption {
+      margin: 0 0 7px;
+      font-size: 0.75em;
+      color: #9fa6b4;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+  body#tinymce.wp-editor tr {
+    border-bottom: 1px solid #eaedf2; }
+    body#tinymce.wp-editor tr:nth-child(even) {
+      background-color: #f8f9fa; }
+  body#tinymce.wp-editor td {
+    padding: 7px;
+    border-right: 1px solid #eaedf2; }
+    body#tinymce.wp-editor td:last-child {
+      border-right: 0; }
+  body#tinymce.wp-editor th {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaedf2;
+    border-right: 1px solid #eaedf2; }
+    body#tinymce.wp-editor th:last-child {
+      border-right: 0; }
+  body#tinymce.wp-editor blockquote {
+    margin: 0 0 1.5em 0.75em;
+    padding: 0 0 0 0.75em;
+    border-left: 3px solid #2980b9;
+    font-style: italic;
+    color: #9fa6b4; }
+  body#tinymce.wp-editor dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em; }
+  body#tinymce.wp-editor img {
+    margin: 0 0 1.5em 0;
+    max-width: 100%;
+    height: auto; }
+  body#tinymce.wp-editor .size-auto,
+  body#tinymce.wp-editor .size-full,
+  body#tinymce.wp-editor .size-large,
+  body#tinymce.wp-editor .size-medium,
+  body#tinymce.wp-editor .size-thumbnail {
+    max-width: 100%;
+    height: auto; }
+  body#tinymce.wp-editor pre {
+    background: #222222;
+    color: #f8f9fa;
+    font-size: 0.9em;
+    padding: 1.5em;
+    margin: 0 0 1.5em;
+    border-radius: 3px; }
+  @media only screen and (min-width: 481px) {
+    body#tinymce.wp-editor {
+      /* at this larger size, we can start to align images */ }
+      body#tinymce.wp-editor .alignleft, body#tinymce.wp-editor img.alignleft {
+        margin-right: 1.5em;
+        display: inline;
+        float: left; }
+      body#tinymce.wp-editor .alignright, body#tinymce.wp-editor img.alignright {
+        margin-left: 1.5em;
+        display: inline;
+        float: right; }
+      body#tinymce.wp-editor .aligncenter, body#tinymce.wp-editor img.aligncenter {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        clear: both; } }
+
+/*# sourceMappingURL=editor-style.css.map */
