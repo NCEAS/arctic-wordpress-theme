@@ -105,16 +105,35 @@ function loadGravatars() {
 } // end function
 
 
+function mobileNav(){
+	var trigger = $("#nav-trigger");
+	
+	if(!trigger.length) return false;
+	
+	trigger.on("click", function(e){
+		//Hide/Show the triggers
+		trigger.children(".icon").toggleClass("hidden");
+		
+		//Hide/Show the menu
+		$("#main-nav").slideToggle();
+	});
+}
+
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
+	window.$ = jQuery;
+	
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
   */
   loadGravatars();
+  
+  mobileNav();
 
 
 }); /* end of as page load scripts */
+

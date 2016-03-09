@@ -2218,6 +2218,7 @@ img.icon,
   margin-bottom: 0px; }
 
 a:link.btn,
+a:visited.btn,
 a.btn,
 .btn {
   display: inline-block;
@@ -2229,6 +2230,7 @@ a.btn,
   -webkit-tap-highlight-color: #146660;
   font-weight: bold; }
   a:link.btn.primary,
+  a:visited.btn.primary,
   a.btn.primary,
   .btn.primary {
     background-color: #0dff93; }
@@ -2515,15 +2517,25 @@ mobile. Make sure to double check these!
     the footer.
     */ }
   .footer .logos {
-    width: calc( 2.5em + 65px + 87px + 128px + 67px + 65px + 1em);
+    width: 570px;
     margin-left: auto;
     margin-right: auto; }
 
 /*********************
 HEADER STYLES
 *********************/
-.header .border-image {
-  background-image: url("../images/border-image-768.jpg"); }
+.header {
+  /* Take nav out of mobile-style */ }
+  .header .border-image {
+    background-image: url("../images/border-image-768.jpg"); }
+  .header #nav-trigger {
+    display: none; }
+  .header nav {
+    float: right;
+    width: auto;
+    display: block; }
+    .header nav .nav li a {
+      text-align: left; }
 
 /******************************************************************
 Site Name:

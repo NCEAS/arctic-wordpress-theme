@@ -52,11 +52,10 @@
 
 					<a href="<?php echo home_url(); ?>" rel="nofollow" id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo.png" /></a>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+					<a id="nav-trigger"><i class="fa fa-bars icon"></i><i class="fa fa-close icon hidden"></i></a>
 
-
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					
+					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" id="main-nav">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)

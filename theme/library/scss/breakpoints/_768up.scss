@@ -293,7 +293,7 @@ mobile. Make sure to double check these!
 	} /* end .footer-links */
 	
 	.logos{
-		width: calc( #{ $pad-small*5 } + 65px + 87px + 128px + 67px + 65px + #{$pad});
+		width: 570px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -306,4 +306,20 @@ HEADER STYLES
 	.border-image{
 			background-image: url('../images/border-image-768.jpg');
 	}
+
+	#nav-trigger{
+		display: none;
+	}
+	
+	/* Take nav out of mobile-style */
+	nav{
+		float: right;
+		width: auto;
+		display: block;
+		
+		.nav li a{
+			text-align: left;
+		}
+	}
 }
+

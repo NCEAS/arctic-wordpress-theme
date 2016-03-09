@@ -28,6 +28,9 @@ body {
 #container{
 	background-color: $white;
 }
+.hidden{
+	display: none;
+}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -166,6 +169,17 @@ h5, .h5 {
 	color: $aurora-bright-green;
 }
 
+.suptitle{
+	margin-bottom: 0px;
+    font-weight: normal;
+    font-style: italic;
+    color: #DDD;
+    
+    + h1{
+    	margin-top: 0px;
+    }
+}
+
 /*********************
 HEADER STYLES
 *********************/
@@ -178,10 +192,6 @@ HEADER STYLES
 		color: $aurora-purple;
 		font-size: 1.5em;
 		font-family: $display-fonts;		
-	}
-	
-	nav{
-		float: right;
 	}
 	
 	.border-image{
@@ -218,7 +228,6 @@ HEADER STYLES
 	
 	h1{ 
 		font-weight: bold; 
-		text-align: center;
 		font-size: 3em; 
 	}
 	p{ 
@@ -240,6 +249,19 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+.header{ 
+	nav{
+		width: 100%;
+    	display: none;
+	}
+	#nav-trigger{
+    	margin-top: .5em;
+    	margin-right: .5em;
+    	font-size: 2em;
+    	float: right;
+    }
+}
+
 .nav {
 	border-bottom: 0;
 	margin: 0;
@@ -251,6 +273,7 @@ and more scalable.
 			text-decoration: none;
 			padding: 0.75em;
 			color: $aurora-purple;
+			text-align: center;
 		}
 
 		&:first-child {}
@@ -1030,7 +1053,10 @@ FOOTER STYLES
 			width: 65px;
 			background-position: -349px 0px;
 		}
-		
+		.nsf-logo{
+			width: 65px;
+			background-position: 100% 0px;
+		}
 	}
 
 }

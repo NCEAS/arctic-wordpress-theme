@@ -2055,6 +2055,7 @@ body#tinymce.wp-editor {
     display: inline;
     margin-bottom: 0px; }
   body#tinymce.wp-editor a:link.btn,
+  body#tinymce.wp-editor a:visited.btn,
   body#tinymce.wp-editor a.btn,
   body#tinymce.wp-editor .btn {
     display: inline-block;
@@ -2066,6 +2067,7 @@ body#tinymce.wp-editor {
     -webkit-tap-highlight-color: #146660;
     font-weight: bold; }
     body#tinymce.wp-editor a:link.btn.primary,
+    body#tinymce.wp-editor a:visited.btn.primary,
     body#tinymce.wp-editor a.btn.primary,
     body#tinymce.wp-editor .btn.primary {
       background-color: #0dff93; }

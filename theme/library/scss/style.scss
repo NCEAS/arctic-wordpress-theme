@@ -29,8 +29,6 @@ the whole project.
 // import mixins
 @import "partials/mixins";
 
-// the grid
-@import "partials/grid";
 
 /*********************
 IMPORTING MODULES
@@ -82,6 +80,9 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "breakpoints/768up";
+	
+	// the grid
+	@import "partials/grid";
 
 } // end of media query
 

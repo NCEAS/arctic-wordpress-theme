@@ -45,6 +45,7 @@
 							<a class="dataone-logo" href="https://dataone.org" target="_blank"></a>
 							<a class="ncei-logo" href="http://ncei.noaa.gov" target="_blank"></a>
 							<a class="noaa-logo" href="http://noaa.gov" target="_blank"></a>
+							<a class="nsf-logo" href="http://nsf.gov" target="_blank"></a>
 						</div>
 						<p class="smaller center">
 							This material is based upon work supported by the National Science Foundation under <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1546024" target="_blank">NSF Award Number 1546024</a>
