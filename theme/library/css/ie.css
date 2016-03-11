@@ -2205,6 +2205,13 @@ p {
 .subtle {
   color: #999; }
 
+code {
+  background-color: #E1F7FF;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #1f254f;
+  text-transform: none; }
+
 /************************************************
  ICONS
 ************************************************/
@@ -2226,9 +2233,10 @@ a.btn,
   margin-bottom: 1em;
   padding: .5em;
   border-radius: 4px;
-  color: #146660;
+  color: #0D4440;
   -webkit-tap-highlight-color: #146660;
-  font-weight: bold; }
+  font-weight: bold;
+  border: #146660 solid 1px; }
   a:link.btn.primary,
   a:visited.btn.primary,
   a.btn.primary,

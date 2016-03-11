@@ -190,7 +190,7 @@ HEADER STYLES
 	
 	.nav{
 		color: $aurora-purple;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		font-family: $display-fonts;		
 	}
 	
@@ -355,7 +355,6 @@ POSTS & CONTENT STYLES
 		.entry-title {
 			margin: 0;
 			
-			font-weight: bold;
     		font-size: 2.1em;
     		line-height: 1.4em;
     		font-family: $display-fonts;
@@ -363,6 +362,8 @@ POSTS & CONTENT STYLES
 		
 		h1.page-title{
 			font-size: 2em;
+			color: $aurora-dark-green;
+			font-weight: lighter;
 		}
 			
 		/* Titles in feed form, such as on category pages */
@@ -371,6 +372,7 @@ POSTS & CONTENT STYLES
 			.post{
 				background-color: #ECF2F5;
 				border-color: $aurora-gray-blue;
+				margin-top: 1em; margin-bottom: 1em;
 			}
 		
 			 .entry-title{
@@ -508,6 +510,11 @@ POSTS & CONTENT STYLES
 				max-width: 100%;
 				height: auto;
 			}
+			
+			h2 img, h3 img, h4 img, h5 img{
+				height: 1em;
+				width: auto;
+			}
 
 			/*
 			image alignment on a screen this size may be
@@ -559,7 +566,6 @@ POSTS & CONTENT STYLES
 
 		.wp-caption {
 			max-width: 100%;
-			background: #eee;
 			padding: 5px;
 
 			/* images inside wp-caption */

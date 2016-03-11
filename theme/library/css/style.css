@@ -2618,6 +2618,13 @@ p {
 .subtle {
   color: #999; }
 
+code {
+  background-color: #E1F7FF;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #1f254f;
+  text-transform: none; }
+
 /************************************************
  ICONS
 ************************************************/
@@ -2639,9 +2646,10 @@ a.btn,
   margin-bottom: 1em;
   padding: .5em;
   border-radius: 4px;
-  color: #146660;
+  color: #0D4440;
   -webkit-tap-highlight-color: #146660;
-  font-weight: bold; }
+  font-weight: bold;
+  border: #146660 solid 1px; }
   a:link.btn.primary,
   a:visited.btn.primary,
   a.btn.primary,
@@ -3286,7 +3294,7 @@ HEADER STYLES
   padding: 0px 0px 1em 0px; }
   .header .nav {
     color: #1f254f;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .header .border-image {
     background-image: url("../images/border-image-481.jpg");
@@ -3385,18 +3393,21 @@ POSTS & CONTENT STYLES
 .page-title,
 .entry-title {
   margin: 0;
-  font-weight: bold;
   font-size: 2.1em;
   line-height: 1.4em;
   font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1.page-title {
-  font-size: 2em; }
+  font-size: 2em;
+  color: #146660;
+  font-weight: lighter; }
 
 /* Titles in feed form, such as on category pages */
 .category .post {
   background-color: #ECF2F5;
-  border-color: #b8cad2; }
+  border-color: #b8cad2;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 .category .entry-title {
   font-size: 1.5em;
   line-height: 1.5em; }
@@ -3471,6 +3482,9 @@ h1.page-title {
     margin: 0 0 1.5em 0;
     max-width: 100%;
     height: auto; }
+  .entry-content h2 img, .entry-content h3 img, .entry-content h4 img, .entry-content h5 img {
+    height: 1em;
+    width: auto; }
   .entry-content .size-auto,
   .entry-content .size-full,
   .entry-content .size-large,
@@ -3502,7 +3516,6 @@ h1.page-title {
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
   .wp-caption img {

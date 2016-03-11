@@ -2047,6 +2047,12 @@ body#tinymce.wp-editor {
     font-size: .8em; }
   body#tinymce.wp-editor .subtle {
     color: #999; }
+  body#tinymce.wp-editor code {
+    background-color: #E1F7FF;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #1f254f;
+    text-transform: none; }
   body#tinymce.wp-editor .icon {
     margin-right: 5px;
     margin-left: 5px; }
@@ -2063,9 +2069,10 @@ body#tinymce.wp-editor {
     margin-bottom: 1em;
     padding: .5em;
     border-radius: 4px;
-    color: #146660;
+    color: #0D4440;
     -webkit-tap-highlight-color: #146660;
-    font-weight: bold; }
+    font-weight: bold;
+    border: #146660 solid 1px; }
     body#tinymce.wp-editor a:link.btn.primary,
     body#tinymce.wp-editor a:visited.btn.primary,
     body#tinymce.wp-editor a.btn.primary,
