@@ -166,7 +166,7 @@ h5, .h5 {
 }
 
 .colored{
-	color: $aurora-bright-green;
+	color: $aurora-green;
 }
 
 .suptitle{
@@ -308,6 +308,11 @@ and more scalable.
 
 			}
 
+		}
+		
+		&.smaller{
+		    font-size: .8em;
+    		line-height: 2.5em;
 		}
 
 	} /* end .menu li */
@@ -869,7 +874,6 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
 		font-size: 0.9em;
 		float: right;
 
@@ -925,7 +929,6 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
 		float: right;
 		font-size: 1em;
 	}

@@ -2637,25 +2637,6 @@ img.icon,
   display: inline;
   margin-bottom: 0px; }
 
-a:link.btn,
-a:visited.btn,
-a.btn,
-.btn {
-  display: inline-block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: .5em;
-  border-radius: 4px;
-  color: #0D4440;
-  -webkit-tap-highlight-color: #146660;
-  font-weight: bold;
-  border: #146660 solid 1px; }
-  a:link.btn.primary,
-  a:visited.btn.primary,
-  a.btn.primary,
-  .btn.primary {
-    background-color: #0dff93; }
-
 /******************************************************************
 Site Name:
 Author:
@@ -2805,40 +2786,56 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+a:link.btn,
+a:visited.btn,
+a.btn,
+.btn {
   display: inline-block;
-  position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: normal;
-  padding: 0 24px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
   border-radius: 4px;
-  border: 0;
-  cursor: pointer;
-  -webkit-transition: background-color 0.14s ease-in-out;
-  transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    color: #FFFFFF;
-    text-decoration: none;
-    outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
-    top: 1px; }
+  color: #0D4440;
+  -webkit-tap-highlight-color: #146660;
+  font-weight: bold;
+  border: #146660 solid 1px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+  a:link.btn.primary,
+  a:visited.btn.primary,
+  a.btn.primary,
+  .btn.primary {
+    background-color: #19B36A; }
+    a:link.btn.primary:hover,
+    a:visited.btn.primary:hover,
+    a.btn.primary:hover,
+    .btn.primary:hover {
+      transition: background-color 500ms;
+      background-color: #146660; }
 
-/*
-An example button.
-You can use this example if you want. Just replace all the variables
-and it will create a button dependant on those variables.
-*/
-.blue-btn, .comment-reply-link, #submit {
-  background-color: #2980b9; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #2574a8; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #2472a4; }
+.nav .menu-item.btn {
+  border-width: 0px;
+  margin: 0px;
+  border-radius: 4px; }
+  .nav .menu-item.btn a {
+    background-color: #f5f5f5;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    font-weight: normal;
+    background-image: none;
+    box-shadow: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: .8em;
+    padding: 12px;
+    margin-top: -2px; }
+  .nav .menu-item.btn.btn-primary a {
+    background-color: #19B36A;
+    color: #FFFFFF;
+    text-shadow: none;
+    border-width: 0px; }
 
 /******************************************************************
 Site Name:
@@ -3276,7 +3273,7 @@ h5, .h5 {
   letter-spacing: 2px; }
 
 .colored {
-  color: #5ebc5f; }
+  color: #19B36A; }
 
 .suptitle {
   margin-bottom: 0px;
@@ -3370,6 +3367,9 @@ and more scalable.
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
+    .nav li.smaller {
+      font-size: .8em;
+      line-height: 2.5em; }
 
 /* end .nav */
 /*********************

@@ -2224,25 +2224,6 @@ img.icon,
   display: inline;
   margin-bottom: 0px; }
 
-a:link.btn,
-a:visited.btn,
-a.btn,
-.btn {
-  display: inline-block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: .5em;
-  border-radius: 4px;
-  color: #0D4440;
-  -webkit-tap-highlight-color: #146660;
-  font-weight: bold;
-  border: #146660 solid 1px; }
-  a:link.btn.primary,
-  a:visited.btn.primary,
-  a.btn.primary,
-  .btn.primary {
-    background-color: #0dff93; }
-
 /******************************************************************
 Site Name:
 Author:

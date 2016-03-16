@@ -54,22 +54,61 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 } // end .button
 
-/*
-An example button.
-You can use this example if you want. Just replace all the variables
-and it will create a button dependant on those variables.
-*/
-.blue-btn {
-  @extend %btn; // here we load the btn defaults
-  background-color: $blue;
 
-  &:hover,
-  &:focus {
-    background-color: darken($blue, 4%);
-  } // end hover
+a:link.btn,
+a:visited.btn,
+a.btn,
+.btn{
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    padding: .5em;
+    border-radius: 4px;
+    color: #0D4440;
+    -webkit-tap-highlight-color: #146660;
+    font-weight: bold;
+    border: #146660 solid 1px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    
+	&.primary{
+	    background-color: $button-color;
+	    
+	    &:hover{
+			transition: background-color 500ms;
+			background-color: $button-hover-color;	    
+		}
+	}
+}
 
-  &:active {
-    background-color: darken($blue, 5%);
-  } // end active
+.nav{
+	.menu-item.btn{
+		border-width: 0px;
+	    margin: 0px;
+	    border-radius: 4px;
+	    
+		 a {
+    		background-color: #f5f5f5;
+    		color: #666;
+    		text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    		font-weight: normal;
+		    background-image: none;
+		    box-shadow: none;
+		    border: 1px solid #CCC;
+		    border-radius: 4px;
+		    -moz-border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    font-size: .8em;
+		    padding: 12px;
+		    margin-top: -2px;
+		}
+		
+		&.btn-primary a{
+			background-color: $button-color;
+		    color: #FFFFFF;
+		    text-shadow: none;
+		    border-width: 0px;
+		}
+	}
+}
 
-} // end blue button

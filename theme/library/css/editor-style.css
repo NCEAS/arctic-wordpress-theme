@@ -2060,24 +2060,6 @@ body#tinymce.wp-editor {
   body#tinymce.wp-editor .entry-content img.icon {
     display: inline;
     margin-bottom: 0px; }
-  body#tinymce.wp-editor a:link.btn,
-  body#tinymce.wp-editor a:visited.btn,
-  body#tinymce.wp-editor a.btn,
-  body#tinymce.wp-editor .btn {
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: .5em;
-    border-radius: 4px;
-    color: #0D4440;
-    -webkit-tap-highlight-color: #146660;
-    font-weight: bold;
-    border: #146660 solid 1px; }
-    body#tinymce.wp-editor a:link.btn.primary,
-    body#tinymce.wp-editor a:visited.btn.primary,
-    body#tinymce.wp-editor a.btn.primary,
-    body#tinymce.wp-editor .btn.primary {
-      background-color: #0dff93; }
   body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
     color: #3341A7;
     /* on hover */
