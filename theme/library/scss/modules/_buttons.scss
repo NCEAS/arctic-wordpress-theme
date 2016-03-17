@@ -73,6 +73,7 @@ a.btn,
     
 	&.primary{
 	    background-color: $button-color;
+	    color: $white;
 	    
 	    &:hover{
 			transition: background-color 500ms;
