@@ -51,7 +51,7 @@ a:focus, a:hover{
 .nav {
 	border: 0;
 	ul {
-		background:$black;
+		background:$white;
 		margin-top:0;
 	}
 	li {
@@ -77,11 +77,12 @@ a:focus, a:hover{
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
 			position: absolute;
 			visibility: hidden;
 			z-index: 8999;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
 
 			li {
 
@@ -91,9 +92,12 @@ a:focus, a:hover{
 					display: block;
 					width: 180px;
 					border-bottom: 1px solid #ccc;
+					font-size: .8em;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						color: $link-hover;
+					}
 
 					&:link {}
 				}

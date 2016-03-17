@@ -101,6 +101,11 @@ a.btn,
 		    font-size: .8em;
 		    padding: 12px;
 		    margin-top: -2px;
+		    transition: background-color 500ms;
+		    
+		    &:hover{
+		    	backgorund-color: #DDD;
+		    }
 		}
 		
 		&.btn-primary a{
@@ -108,6 +113,10 @@ a.btn,
 		    color: #FFFFFF;
 		    text-shadow: none;
 		    border-width: 0px;
+		    
+		    &:hover{
+				background-color: $button-hover-color;
+			}
 		}
 	}
 }

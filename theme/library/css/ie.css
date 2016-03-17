@@ -2408,7 +2408,7 @@ a:focus, a:hover {
   /* highlight current page */
   /* end current highlighters */ }
   .nav ul {
-    background: #222222;
+    background: #FFFFFF;
     margin-top: 0; }
   .nav li {
     float: left;
@@ -2426,11 +2426,12 @@ a:focus, a:hover {
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;
-      border: 1px solid #ccc;
-      border-top: 0;
       position: absolute;
       visibility: hidden;
       z-index: 8999;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
       /* highlight sub-menu current page */ }
       .nav li ul.sub-menu li,
       .nav li ul.children li {
@@ -2445,7 +2446,12 @@ a:focus, a:hover {
           border-right: 0;
           display: block;
           width: 180px;
-          border-bottom: 1px solid #ccc; }
+          border-bottom: 1px solid #ccc;
+          font-size: .8em; }
+          .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+          .nav li ul.children li a:hover,
+          .nav li ul.children li a:focus {
+            color: #146660; }
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }
