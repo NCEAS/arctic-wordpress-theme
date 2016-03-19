@@ -62,7 +62,8 @@ I've edited it a bit, but it's a nice starting point.
 // font stacks
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$display-fonts:     "Aller", $sans-serif;
+$header-fonts:      "Aller", $sans-serif;
+$display-fonts:     "AllerBold", "Aller", $sans-serif;
 $brand-fonts:       "AllerLight", $display-fonts;
 
 

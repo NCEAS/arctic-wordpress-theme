@@ -3246,7 +3246,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
-  font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "AllerBold", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h2, .h2 {
   font-size: 1.75em;
@@ -3298,7 +3298,7 @@ HEADER STYLES
   line-height: 70px;
   font-size: 1.4em;
   color: #333;
-  font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AllerLight", "AllerBold", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif;
   vertical-align: bottom; }
   .brand img {
     height: 50px;
@@ -3393,12 +3393,12 @@ POSTS & CONTENT STYLES
   margin: 0;
   font-size: 2.1em;
   line-height: 1.4em;
-  font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "AllerBold", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1.page-title {
   font-size: 2em;
-  color: #146660;
-  font-weight: lighter; }
+  color: #222222;
+  font-weight: bold; }
 
 /* Titles in feed form, such as on category pages */
 .category .post {
@@ -3749,7 +3749,7 @@ FOOTER STYLES
   /* end .footer-links */ }
   .footer .footer-links .nav-title {
     color: #666;
-    font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "AllerBold", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .footer .logos {
     margin-top: 2em; }
     .footer .logos a {

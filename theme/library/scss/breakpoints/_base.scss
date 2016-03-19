@@ -191,7 +191,7 @@ HEADER STYLES
 	.nav{
 		color: $aurora-purple;
 		font-size: 1.3em;
-		font-family: $display-fonts;		
+		font-family: $header-fonts;		
 	}
 	
 	.border-image{
@@ -375,8 +375,8 @@ POSTS & CONTENT STYLES
 		
 		h1.page-title{
 			font-size: 2em;
-			color: $aurora-dark-green;
-			font-weight: lighter;
+			color: $black;
+			font-weight: bold;
 		}
 			
 		/* Titles in feed form, such as on category pages */
