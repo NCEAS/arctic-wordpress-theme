@@ -2804,7 +2804,8 @@ a.btn,
 .nav .menu-item.btn {
   border-width: 0px;
   margin: 0px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  display: block; }
   .nav .menu-item.btn a {
     background-color: #f5f5f5;
     color: #666;
@@ -3295,12 +3296,12 @@ HEADER STYLES
 
 .brand {
   line-height: 70px;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #333;
   font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif;
   vertical-align: bottom; }
   .brand img {
-    height: 70px;
+    height: 50px;
     width: auto;
     margin-right: 10px; }
 
@@ -3324,6 +3325,8 @@ a.brand {
     background-color: rgba(21, 25, 53, 0.8);
     padding: 20px;
     border-radius: 4px; }
+    .entry-content .display-text-w-image p a {
+      color: #19B36A; }
 
 /*********************
 NAVIGATION STYLES
@@ -3808,6 +3811,11 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
+  .brand {
+    font-size: 1.5em; }
+    .brand img {
+      height: 70px; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -3850,6 +3858,12 @@ tweeners.
       clear: both; }
 
   /* end .entry-content */
+  .display-text-w-image .btn.center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    display: block; }
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -3987,7 +4001,8 @@ you can add resource intensive styles.
             left: 100%; }
       .nav li:hover > ul {
         top: auto;
-        visibility: visible; }
+        visibility: visible;
+        display: block; }
 
   /* end .nav */
   /*********************

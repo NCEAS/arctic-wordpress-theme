@@ -205,13 +205,13 @@ HEADER STYLES
 
 .brand {
     line-height: 70px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #333;
     font-family: $brand-fonts;
     vertical-align: bottom;
 	
 	img{
-		height: 70px;
+		height: 50px;
 		width: auto;
 		margin-right: 10px;
 	}
@@ -241,6 +241,10 @@ a.brand{
 		background-color: rgba(21, 25, 53, 0.8); 
 		padding: 20px;
 		border-radius: 4px;
+		
+		a{
+			color: $aurora-green;
+		}
 	}
 }
 
