@@ -203,14 +203,21 @@ HEADER STYLES
 	}
 }
 
-#logo {
-	margin: 0.75em 0;
+.brand {
+    line-height: 70px;
+    font-size: 1.5em;
+    color: #333;
+    font-family: $brand-fonts;
+    vertical-align: bottom;
 	
 	img{
 		height: 70px;
-		position: relative;
-		top: 6px;
+		width: auto;
+		margin-right: 10px;
 	}
+}
+a.brand{
+	color: #333;
 }
 
 .entry-content .display-text-w-image{
@@ -280,17 +287,16 @@ and more scalable.
 
 		&:last-child {}
 
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
 		ul.sub-menu,
 		ul.children {
+		
+			display: none;
 
 			li {
+				
+				&.btn{
+					width: 100%;
+				}
 
 				a {
 					&:hover,

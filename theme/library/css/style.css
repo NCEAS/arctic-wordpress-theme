@@ -481,17 +481,22 @@ FONT FACE (IN YOUR FACE)
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerLight";
+  src: url("../../library/fonts/Aller_Lt.ttf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "AllerItalic";
   src: url("../../library/fonts/Aller_It.ttf");
   font-weight: normal;
   font-style: italic; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerBold";
   src: url("../../library/fonts/Aller_Bd.ttf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerBoldItalic";
   src: url("../../library/fonts/Aller_BdIt.ttf");
   font-weight: bold;
   font-style: italic; }
@@ -3288,12 +3293,19 @@ HEADER STYLES
     width: 100%;
     margin-bottom: 1em; }
 
-#logo {
-  margin: 0.75em 0; }
-  #logo img {
+.brand {
+  line-height: 70px;
+  font-size: 1.5em;
+  color: #333;
+  font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: bottom; }
+  .brand img {
     height: 70px;
-    position: relative;
-    top: 6px; }
+    width: auto;
+    margin-right: 10px; }
+
+a.brand {
+  color: #333; }
 
 .entry-content .display-text-w-image {
   background-size: cover;
@@ -3338,23 +3350,21 @@ and more scalable.
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li {
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    .nav li a {
-      display: block;
-      text-decoration: none;
-      padding: 0.75em;
-      color: #1f254f;
-      text-align: center; }
-    .nav li.smaller {
-      font-size: .8em;
-      line-height: 2.5em; }
+  .nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.75em;
+    color: #1f254f;
+    text-align: center; }
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    display: none; }
+    .nav li ul.sub-menu li.btn,
+    .nav li ul.children li.btn {
+      width: 100%; }
+  .nav li.smaller {
+    font-size: .8em;
+    line-height: 2.5em; }
 
 /* end .nav */
 /*********************

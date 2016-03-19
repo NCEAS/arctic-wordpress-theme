@@ -1,8 +1,10 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
-
-					<a href="<?php echo home_url(); ?>" rel="nofollow" class="col-1-2"><img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo.png" /></a>
+					
+					<div class="col-1-2">
+						<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand"><img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo.png" />NSF Arctic Data Center</a>
+					</div>
 					
 					<nav role="navigation">
 						<?php wp_nav_menu(array(

@@ -68,17 +68,22 @@ FONT FACE (IN YOUR FACE)
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerLight";
+  src: url("../../library/fonts/Aller_Lt.ttf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "AllerItalic";
   src: url("../../library/fonts/Aller_It.ttf");
   font-weight: normal;
   font-style: italic; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerBold";
   src: url("../../library/fonts/Aller_Bd.ttf");
   font-weight: bold;
   font-style: normal; }
 @font-face {
-  font-family: "Aller";
+  font-family: "AllerBoldItalic";
   src: url("../../library/fonts/Aller_BdIt.ttf");
   font-weight: bold;
   font-style: italic; }
