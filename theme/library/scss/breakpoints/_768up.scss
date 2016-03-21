@@ -81,6 +81,7 @@ a:focus, a:hover{
 			visibility: hidden;
 			z-index: 8999;
 			background-color: transparent;
+			padding-left: 0px;
 
 			li {
 
@@ -88,10 +89,7 @@ a:focus, a:hover{
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
-					font-size: .8em;
-					color: #FFF;
-					background-color: $aurora-purple;
+					
 
 					&:hover, &:focus{
 						background-color: $aurora-green;

@@ -117,6 +117,15 @@ function mobileNav(){
 		//Hide/Show the menu
 		$("#main-nav").slideToggle();
 	});
+	
+	//Show submenus when a root link is clicked
+	$(".nav > li").click(function(e){
+		var parentEl = e.target.tagName == "LI"? e.target : $(e.target).parent("li");
+		if(!parentEl || !$(parentEl).length) return;
+		
+		$(parentEl).find(".sub-menu").slideToggle();
+		
+	});
 }
 
 /*

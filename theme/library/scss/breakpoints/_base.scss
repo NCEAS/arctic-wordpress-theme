@@ -295,14 +295,20 @@ and more scalable.
 		ul.children {
 		
 			display: none;
+			padding-left: 0px;
 
 			li {
-				
+				background-color: $aurora-purple;
+				border-bottom: 1px solid #ccc;
+				font-size: .8em;
+							
 				&.btn{
 					width: 100%;
 				}
 
 				a {
+					color: #FFF;
+					
 					&:hover,
 					&:focus {}
 

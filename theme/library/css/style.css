@@ -229,11 +229,6 @@ dd {
 menu {
   padding: 0 0 0 40px; }
 
-ol,
-ul {
-  padding: 0;
-  list-style-type: none; }
-
 /*
  * Corrects list images handled incorrectly in IE7.
  */
@@ -2782,12 +2777,12 @@ a.btn,
   margin-bottom: 1em;
   padding: .5em;
   border-radius: 4px;
-  color: #0D4440;
+  color: #146660;
   -webkit-tap-highlight-color: #146660;
-  font-weight: bold;
+  font-weight: normal;
   border: #146660 solid 1px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+  text-shadow: none;
+  transition: all 500ms; }
   a:link.btn.primary,
   a:visited.btn.primary,
   a.btn.primary,
@@ -2800,6 +2795,12 @@ a.btn,
     .btn.primary:hover {
       transition: background-color 500ms;
       background-color: #146660; }
+  a:link.btn:hover,
+  a:visited.btn:hover,
+  a.btn:hover,
+  .btn:hover {
+    background-color: #146660;
+    color: #FFFFFF; }
 
 .nav .menu-item.btn {
   border-width: 0px;
@@ -3361,10 +3362,19 @@ and more scalable.
     text-align: center; }
   .nav li ul.sub-menu,
   .nav li ul.children {
-    display: none; }
-    .nav li ul.sub-menu li.btn,
-    .nav li ul.children li.btn {
-      width: 100%; }
+    display: none;
+    padding-left: 0px; }
+    .nav li ul.sub-menu li,
+    .nav li ul.children li {
+      background-color: #1f254f;
+      border-bottom: 1px solid #ccc;
+      font-size: .8em; }
+      .nav li ul.sub-menu li.btn,
+      .nav li ul.children li.btn {
+        width: 100%; }
+      .nav li ul.sub-menu li a,
+      .nav li ul.children li a {
+        color: #FFF; }
   .nav li.smaller {
     font-size: .8em;
     line-height: 2.5em; }
@@ -3957,6 +3967,7 @@ you can add resource intensive styles.
         visibility: hidden;
         z-index: 8999;
         background-color: transparent;
+        padding-left: 0px;
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
@@ -3969,11 +3980,7 @@ you can add resource intensive styles.
           .nav li ul.children li a {
             border-right: 0;
             display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc;
-            font-size: .8em;
-            color: #FFF;
-            background-color: #1f254f; }
+            width: 180px; }
             .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
             .nav li ul.children li a:hover,
             .nav li ul.children li a:focus {

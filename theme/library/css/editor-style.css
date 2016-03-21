@@ -458,10 +458,6 @@ body#tinymce.wp-editor {
     margin: 0; }
   body#tinymce.wp-editor menu {
     padding: 0 0 0 40px; }
-  body#tinymce.wp-editor ol,
-  body#tinymce.wp-editor ul {
-    padding: 0;
-    list-style-type: none; }
   body#tinymce.wp-editor nav ul,
   body#tinymce.wp-editor nav ol {
     list-style: none;
