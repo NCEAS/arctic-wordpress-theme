@@ -2411,6 +2411,7 @@ a:focus, a:hover {
   .nav li {
     float: left;
     position: relative;
+    border-bottom: 0px;
     /*
     plan your menus and drop-downs wisely.
     */

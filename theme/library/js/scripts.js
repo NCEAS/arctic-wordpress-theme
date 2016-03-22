@@ -128,6 +128,10 @@ function mobileNav(){
 	});
 }
 
+function insertOrcidIcon(){
+	$(".nav .login.btn a").prepend('<img src="https://arcticdata.io/catalog/wp-content/themes/aurora/library/images/orcid_64x64.png" class="icon icon-on-left" />');
+}
+
 /*
  * Put all your regular jQuery in here.
 */
@@ -142,6 +146,8 @@ jQuery(document).ready(function($) {
   loadGravatars();
   
   mobileNav();
+  
+  insertOrcidIcon();
 
 
 }); /* end of as page load scripts */

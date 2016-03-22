@@ -2795,10 +2795,10 @@ a.btn,
     .btn.primary:hover {
       transition: background-color 500ms;
       background-color: #146660; }
-  a:link.btn:hover,
-  a:visited.btn:hover,
-  a.btn:hover,
-  .btn:hover {
+  a:link.btn:hover a,
+  a:visited.btn:hover a,
+  a.btn:hover a,
+  .btn:hover a {
     background-color: #146660;
     color: #FFFFFF; }
 
@@ -2823,14 +2823,23 @@ a.btn,
     margin-top: -2px;
     transition: background-color 500ms; }
     .nav .menu-item.btn a:hover {
-      backgorund-color: #DDD; }
+      background-color: #DDD; }
   .nav .menu-item.btn.btn-primary a {
     background-color: #19B36A;
     color: #FFFFFF;
     text-shadow: none;
     border-width: 0px; }
     .nav .menu-item.btn.btn-primary a:hover {
-      background-color: #146660; }
+      background-color: #146660;
+      text-shadow: none; }
+  .nav .menu-item.btn.login a {
+    border: 1px solid #146660;
+    color: #146660;
+    background-color: #FFFFFF;
+    text-shadow: none; }
+    .nav .menu-item.btn.login a:hover, .nav .menu-item.btn.login a:focus {
+      background-color: #146660;
+      color: #FFFFFF; }
 
 /******************************************************************
 Site Name:
@@ -3354,30 +3363,32 @@ and more scalable.
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li a {
-    display: block;
-    text-decoration: none;
-    padding: 0.75em;
-    color: #1f254f;
-    text-align: center; }
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    display: none;
-    padding-left: 0px; }
-    .nav li ul.sub-menu li,
-    .nav li ul.children li {
-      background-color: #1f254f;
-      border-bottom: 1px solid #ccc;
-      font-size: .8em; }
-      .nav li ul.sub-menu li.btn,
-      .nav li ul.children li.btn {
-        width: 100%; }
-      .nav li ul.sub-menu li a,
-      .nav li ul.children li a {
-        color: #FFF; }
-  .nav li.smaller {
-    font-size: .8em;
-    line-height: 2.5em; }
+  .nav li {
+    border-bottom: 1px solid #DDD; }
+    .nav li a {
+      display: block;
+      text-decoration: none;
+      padding: 0.75em;
+      color: #1f254f;
+      text-align: center; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      display: none;
+      padding-left: 0px; }
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        background-color: #1f254f;
+        border-bottom: 1px solid #ccc;
+        font-size: .8em; }
+        .nav li ul.sub-menu li.btn,
+        .nav li ul.children li.btn {
+          width: 100%; }
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          color: #FFF; }
+    .nav li.smaller {
+      font-size: .8em;
+      line-height: 2.5em; }
 
 /* end .nav */
 /*********************
@@ -3950,6 +3961,7 @@ you can add resource intensive styles.
     .nav li {
       float: left;
       position: relative;
+      border-bottom: 0px;
       /*
       plan your menus and drop-downs wisely.
       */

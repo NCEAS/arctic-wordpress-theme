@@ -81,7 +81,7 @@ a.btn,
 		}
 	}
 	
-	&:hover{
+	&:hover a{
 		background-color: $button-hover-color;
 		color: $white;
 	}
@@ -111,7 +111,7 @@ a.btn,
 		    transition: background-color 500ms;
 		    
 		    &:hover{
-		    	backgorund-color: #DDD;
+		    	background-color: #DDD;
 		    }
 		}
 		
@@ -123,6 +123,19 @@ a.btn,
 		    
 		    &:hover{
 				background-color: $button-hover-color;
+				text-shadow: none;
+			}
+		}
+		
+		&.login a{
+			border: 1px solid $button-hover-color;
+			color: $button-hover-color;
+			background-color: $white;
+			text-shadow: none;
+		
+			&:hover, &:focus{
+				background-color: $button-hover-color;
+				color: $white;
 			}
 		}
 	}
