@@ -3523,7 +3523,11 @@ h1.page-title {
     height: auto; }
   .entry-content .size-small.size-square {
     height: 150px;
-    width: 150px; }
+    width: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 90px;
+    min-height: 90px; }
   .entry-content .circle {
     border-radius: 50%; }
   .entry-content pre {
@@ -3550,11 +3554,11 @@ h1.page-title {
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
-    width: 100%; }
+    width: auto; }
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
-    text-align: center; }
+    text-align: left; }
 
 /* end .wp-caption */
 /* image gallery styles */
@@ -3982,6 +3986,8 @@ you can add resource intensive styles.
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
+      .nav li:last-child .sub-menu {
+        right: 10px; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;

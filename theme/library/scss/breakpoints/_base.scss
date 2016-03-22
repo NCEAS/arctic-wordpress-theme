@@ -565,6 +565,10 @@ POSTS & CONTENT STYLES
 			
 			.size-small.size-square{
 				height: 150px; width: 150px;
+			    max-width: 150px;
+    			max-height: 150px;
+    			min-width: 90px;
+    			min-height: 90px;
 			}
 			
 			.circle{
@@ -600,13 +604,13 @@ POSTS & CONTENT STYLES
 			img {
 				max-width: 100%;
 				margin-bottom: 0;
-				width: 100%;
+				width: auto;
 			}
 
 			p.wp-caption-text {
 				font-size: 0.85em;
 				margin: 4px 0 7px;
-				text-align: center;
+				text-align: left;
 			}
 
 		} /* end .wp-caption */

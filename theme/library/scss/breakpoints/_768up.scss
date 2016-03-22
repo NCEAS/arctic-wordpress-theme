@@ -70,7 +70,9 @@ a:focus, a:hover{
 		}
 
 		&:first-child {}
-		&:last-child {}
+		&:last-child .sub-menu{
+			right: 10px;
+		}
 
 		/*
 		plan your menus and drop-downs wisely.
