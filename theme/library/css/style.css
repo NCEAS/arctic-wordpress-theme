@@ -2840,6 +2840,10 @@ a.btn,
     .nav .menu-item.btn.login a:hover, .nav .menu-item.btn.login a:focus {
       background-color: #146660;
       color: #FFFFFF; }
+    .nav .menu-item.btn.login a img.icon {
+      height: 20px;
+      position: relative;
+      top: 5px; }
 
 /******************************************************************
 Site Name:
@@ -3264,11 +3268,11 @@ h2, .h2 {
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 1.125em; }
+  font-size: 1.3em; }
 
 h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700; }
+  font-size: 1.2em;
+  font-weight: normal; }
 
 h5, .h5 {
   font-size: 0.846em;
@@ -3324,18 +3328,18 @@ a.brand {
   min-height: 600px;
   padding: 50px; }
   .entry-content .display-text-w-image > * {
-    max-width: 960px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     color: white; }
   .entry-content .display-text-w-image h1 {
     font-weight: bold;
     font-size: 3em; }
-  .entry-content .display-text-w-image p {
-    background-color: rgba(21, 25, 53, 0.8);
-    padding: 20px;
+  .entry-content .display-text-w-image article {
+    background-color: rgba(26, 29, 51, 0.8);
+    padding: 3em;
     border-radius: 4px; }
-    .entry-content .display-text-w-image p a {
+    .entry-content .display-text-w-image article a {
       color: #19B36A; }
 
 /*********************
@@ -3400,7 +3404,7 @@ POSTS & CONTENT STYLES
 .hentry {
   margin-bottom: 1em; }
   .hentry header {
-    padding: 1em; }
+    padding: 0px 1.3em; }
   .hentry footer {
     padding: 1.5em;
     border-top: 1px solid #f8f9fa; }
@@ -3421,6 +3425,10 @@ h1.page-title {
   color: #222222;
   font-weight: bold; }
 
+/* If a heading 2 is the first element in an entry, treat is as a subtitle */
+.entry-content > h2:first-child {
+  margin-top: 0px; }
+
 /* Titles in feed form, such as on category pages */
 .category .post {
   background-color: #ECF2F5;
@@ -3430,6 +3438,8 @@ h1.page-title {
 .category .entry-title {
   font-size: 1.5em;
   line-height: 1.5em; }
+.category .hentry header {
+  padding: 1em; }
 
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */

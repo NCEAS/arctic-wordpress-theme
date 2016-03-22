@@ -137,6 +137,12 @@ a.btn,
 				background-color: $button-hover-color;
 				color: $white;
 			}
+			
+			img.icon{
+				height: 20px;
+				position: relative;
+				top: 5px;
+			}
 		}
 	}
 }

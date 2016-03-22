@@ -150,12 +150,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	font-size: 1.3em;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
+	font-size: 1.2em;
+	font-weight: normal;
 }
 
 h5, .h5 {
@@ -227,7 +227,7 @@ a.brand{
 	padding: 50px;
 	
 	> *{
-		max-width: 960px; 
+		max-width: 1024px; 
 		margin-left: auto; 
 		margin-right: auto;
 		color: white;
@@ -237,9 +237,9 @@ a.brand{
 		font-weight: bold; 
 		font-size: 3em; 
 	}
-	p{ 
-		background-color: rgba(21, 25, 53, 0.8); 
-		padding: 20px;
+	article{ 
+		background-color: rgba(26, 29, 51, 0.8); 
+		padding: 3em;
 		border-radius: 4px;
 		
 		a{
@@ -356,7 +356,7 @@ POSTS & CONTENT STYLES
 			margin-bottom: $pad;
 
 			header {
-				padding: $pad;
+				padding: 0px 1.3em;
 			}
 
 			footer {
@@ -385,6 +385,10 @@ POSTS & CONTENT STYLES
 			color: $black;
 			font-weight: bold;
 		}
+		/* If a heading 2 is the first element in an entry, treat is as a subtitle */
+		.entry-content > h2:first-child{
+			margin-top: 0px;
+		}
 			
 		/* Titles in feed form, such as on category pages */
 		.category{
@@ -398,6 +402,10 @@ POSTS & CONTENT STYLES
 			 .entry-title{
 				font-size: 1.5em;
 				line-height: 1.5em;
+			}
+			
+			.hentry header{
+				padding: $pad;
 			}
 		}	
 
