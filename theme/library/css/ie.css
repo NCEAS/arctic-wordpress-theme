@@ -2422,6 +2422,8 @@ a:focus, a:hover {
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
+    .nav li:last-child .sub-menu {
+      right: 10px; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;
