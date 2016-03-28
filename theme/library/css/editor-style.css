@@ -2034,6 +2034,8 @@ body#tinymce.wp-editor {
     font-feature-settings: "liga", "dlig"; }
   body#tinymce.wp-editor .smaller {
     font-size: .8em; }
+  body#tinymce.wp-editor .larger {
+    font-size: 1.2em; }
   body#tinymce.wp-editor .subtle {
     color: #999; }
   body#tinymce.wp-editor code {

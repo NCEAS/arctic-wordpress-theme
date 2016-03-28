@@ -2194,6 +2194,9 @@ p {
 .smaller {
   font-size: .8em; }
 
+.larger {
+  font-size: 1.2em; }
+
 .subtle {
   color: #999; }
 
@@ -2341,12 +2344,6 @@ POSTS & CONTENT STYLES
     clear: both; }
 
 /* end .entry-content */
-.display-text-w-image .btn.center {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
-  display: block; }
-
 /*********************
 FOOTER STYLES
 *********************/
