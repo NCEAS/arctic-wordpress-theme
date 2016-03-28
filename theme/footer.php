@@ -43,10 +43,10 @@
 
 					<div class="clearfix">
 						<div class="logos">
-							<a class="nceas-logo" href="https://nceas.ucsb.edu" target="_blank"></a>
-							<a class="ucsb-logo" href="https://ucsb.edu" target="_blank"></a>
+							<a class="nceas-logo" href="http://nceas.ucsb.edu" target="_blank"></a>
+							<a class="ucsb-logo" href="http://ucsb.edu" target="_blank"></a>
 							<a class="dataone-logo" href="https://dataone.org" target="_blank"></a>
-							<a class="ncei-logo" href="http://ncei.noaa.gov" target="_blank"></a>
+							<a class="ncei-logo" href="https://ncei.noaa.gov" target="_blank"></a>
 							<a class="noaa-logo" href="http://noaa.gov" target="_blank"></a>
 							<a class="nsf-logo" href="http://nsf.gov" target="_blank"></a>
 						</div>

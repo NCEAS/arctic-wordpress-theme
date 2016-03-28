@@ -234,9 +234,19 @@ a.brand{
 		color: white;
 	}
 	
+	&.light > *{
+		color: #333;
+		
+		article{
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	}
+	
 	h1{ 
-		font-weight: bold; 
+		font-weight: lighter; 
 		font-size: 3em; 
+		font-family: AllerLight;
+		text-align: center;
 	}
 	article{ 
 		background-color: rgba(26, 29, 51, 0.8); 
@@ -245,6 +255,11 @@ a.brand{
 		
 		a{
 			color: $aurora-green;
+		}
+		
+		.btn.display{
+		    color: #a7d7d4;
+    		border: 3px solid #a7d7d4;
 		}
 	}
 }
@@ -522,6 +537,14 @@ POSTS & CONTENT STYLES
 				&:before {}
 
 			}
+			
+			.aside{
+			    color: #666;
+			    font-style: normal;
+			    font-size: .9em;
+			    border: 0px;
+			    padding: 1em;
+			}
 
 			dl {}
 
@@ -731,258 +754,45 @@ PAGE NAVI STYLES
 	} /* end .wp-prev-next */
 
 /******************************************************************
-COMMENT STYLES
+IMAGE STYLES
 ******************************************************************/
-
-/* h3 comment title */
-#comments-title {
-	padding: 0.75em;
-	margin: 0;
-	border-top: 1px solid $light-gray;
-
-	/* number of comments span */
-	span {}
-
-}
-
-.comment-nav {
-
-	ul {
-
-		li {}
-
+.logos{
+	margin-top: $pad-large;
+	
+	a{
+		background-image: url('../images/footer-logos.png');
+		background-repeat: no-repeat;
+		height: 73px;
+		overflow: hidden;
+		margin-right: $pad-small;
+		display: inline-block;
+	}
+	
+	.nceas-logo{
+		width: 65px;
+		background-position: 0px 0px;
+	}
+	.ucsb-logo{
+		width: 87px;
+		background-position: -66px 0px;
+	}
+	.dataone-logo{
+		width: 128px;
+		background-position: -153px 0px;
+	}
+	.ncei-logo{
+		width: 67px;
+		background-position: -282px 0px;
+	}
+	.noaa-logo{
+		width: 65px;
+		background-position: -349px 0px;
+	}
+	.nsf-logo{
+		width: 65px;
+		background-position: 100% 0px;
 	}
 }
-
-
-.commentlist {
-	margin: 0;
-	list-style-type: none;
-}
-
-.comment {
-	position: relative;
-	clear: both;
-	overflow: hidden;
-	padding: 1.5em;
-	border-bottom: 1px solid $light-gray;
-
-	.comment-author {
-		padding: 7px;
-		border: 0;
-	}
-
-	/* vcard */
-	.vcard {
-		margin-left: 50px;
-
-		cite.fn {
-			font-weight: 700;
-			font-style: normal;
-
-			a.url {}
-
-		}
-
-		time {
-			display: block;
-			font-size: 0.9em;
-			font-style: italic;
-
-			a {
-				color: $meta-gray;
-				text-decoration: none;
-
-				&:hover {
-					text-decoration: underline;
-				}
-
-			}
-
-		}
-
-		.photo {}
-
-		.avatar {
-			position: absolute;
-			left: 16px;
-			border-radius: 50%;
-		}
-
-	} /* end .commentlist .vcard */
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-	.children {
-		margin: 0;
-
-		li {}
-
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
-
-	} /* end children */
-
-
-	&[class*=depth-] {
-		margin-top: 1.1em;
-	}
-
-	&.depth-1 {
-		margin-left: 0;
-		margin-top: 0;
-	}
-
-	&:not(.depth-1) {
-		margin-top: 0;
-		margin-left: 7px;
-		padding: 7px;
-	}
-
-	&.depth-2 {}
-	&.depth-3 {}
-	&.depth-4 {}
-	&.depth-5 {}
-
-	/* general comment classes */
-	&.alt {}
-	&.odd {
-		background-color: $white;
-	}
-	&.even {
-		background: $light-gray;
-	}
-	&.parent {}
-	&.comment {}
-	&.children {}
-	&.pingback {}
-	&.bypostauthor {}
-	&.comment-author {}
-	&.comment-author-admin {}
-	&.thread-alt {}
-	&.thread-odd {}
-	&.thread-even {}
-}
-
-
-
-
-	/* comment meta */
-	.comment-meta {
-
-		a {}
-
-	}
-
-	.commentmetadata {
-
-		a {}
-
-	}
-
-	/* comment content */
-	.comment_content {
-
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
-
-	} /* end .commentlist .comment_content */
-
-	/* comment reply link */
-	.comment-reply-link {
-		font-size: 0.9em;
-		float: right;
-
-		&:hover,
-		&:focus {
-		}
-
-	} /* end .commentlist .comment-reply-link */
-
-	/* edit comment link */
-	.comment-edit-link {
-		font-style: italic;
-		margin: 0 7px;
-		text-decoration: none;
-		font-size: 0.9em;
-	}
-
-
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-
-.comment-respond {
-	@extend .cf;
-	padding: 1.5em;
-	border-top: 1px solid $light-gray;
-}
-
-	#reply-title {
-		margin: 0;
-	}
-
-	.logged-in-as {
-		color: $meta-gray;
-		font-style: italic;
-		margin: 0;
-
-		a {
-			color: $text-color;
-		}
-	}
-
-	.comment-form-comment {
-		margin: 1.5em 0 0.75em;
-	}
-
-	.form-allowed-tags {
-		padding: 1.5em;
-		background-color: $light-gray;
-		font-size: 0.9em;
-	}
-
-	/* comment submit button */
-	#submit {
-		float: right;
-		font-size: 1em;
-	}
-
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
-
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
-
-	/* logged in comments */
-	.comments-logged-in-as {}
-
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
-
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
 
 /*********************
 SIDEBARS & ASIDES
@@ -1052,46 +862,13 @@ FOOTER STYLES
 	} /* end .footer-links */
 	
 	.logos{
-		margin-top: $pad-large;
-		
-		a{
-			background-image: url('../images/footer-logos.png');
-			background-repeat: no-repeat;
-			height: 73px;
-			overflow: hidden;
-			margin-right: $pad-small;
-			display: inline-block;
+		img{
 			opacity: .8;
-		}	
-		
+		}
+	
 		a:hover, a:focus{
 			opacity: 1;
 			transition: opacity 500ms;
-		}
-		
-		.nceas-logo{
-			width: 65px;
-			background-position: 0px 0px;
-		}
-		.ucsb-logo{
-			width: 87px;
-			background-position: -66px 0px;
-		}
-		.dataone-logo{
-			width: 128px;
-			background-position: -153px 0px;
-		}
-		.ncei-logo{
-			width: 67px;
-			background-position: -282px 0px;
-		}
-		.noaa-logo{
-			width: 65px;
-			background-position: -349px 0px;
-		}
-		.nsf-logo{
-			width: 65px;
-			background-position: 100% 0px;
 		}
 	}
 

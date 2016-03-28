@@ -10,13 +10,17 @@
 
 							<header class="article-header">
 
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'auroratheme' ); ?></h1>
+								<h1><?php _e( "Oops! We can't find the page you're looking for.", 'auroratheme' ); ?></h1>
 
 							</header>
 
 							<section class="entry-content">
 
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'auroratheme' ); ?></p>
+								<h3>Did you came to this page from an aoncadis.org ACADIS Gateway web address?</h3>
+								<p>As of March 2016, the primary repository for NSF Arctic research has transitioned from the ACADIS Gateway to the NSF Arctic Data Center.
+								All data in the ACADIS Gateway has been transferred to the NSF Arctic Data Center. <a href="">Search for <strong>data</strong> in the NSF Arctic Data Center catalog.</a></p>
+								<p>You can search for other content below:</p>
+								 
 
 							</section>
 
@@ -27,8 +31,6 @@
 							</section>
 
 							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'auroratheme' ); ?></p>
 
 							</footer>
 

@@ -92,7 +92,7 @@ I've edited it a bit, but it's a nice starting point.
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 $header-fonts:      "Aller", $sans-serif;
-$display-fonts:     "AllerBold", "Aller", $sans-serif;
+$display-fonts:     "AllerLight", "Aller", $sans-serif;
 $brand-fonts:       "AllerLight", $display-fonts;
 
 
@@ -122,6 +122,9 @@ p {
 
 .smaller{
 	font-size: .8em;
+}
+.larger{
+	font-size: 1.2em;
 }
 
 .subtle{
