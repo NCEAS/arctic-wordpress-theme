@@ -117,7 +117,6 @@ a, a:visited {
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 	}
 }
-
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -165,7 +164,8 @@ h5, .h5 {
 	letter-spacing: 2px;
 }
 
-.colored{
+.colored,
+a.colored, a:visited.colored, a:link.colored{
 	color: $aurora-green;
 }
 
@@ -247,6 +247,7 @@ a.brand{
 		font-size: 3em; 
 		font-family: AllerLight;
 		text-align: center;
+		color: $aurora-purple;
 	}
 	article{ 
 		background-color: rgba(26, 29, 51, 0.8); 
@@ -617,6 +618,20 @@ POSTS & CONTENT STYLES
 			    margin-bottom: 4em;
 			    margin-top: 4em;
 			}
+			
+			/* Publication page */
+			a.publications-view-dataset-link{
+				@extend .btn;
+				padding: .1em .5em !important;
+				margin-left: .5em;
+			}
+			p.publications-citation:nth-child(odd) {
+			    background-color: #EFEFEF;
+			    padding: 1em;
+			}
+			.publications-citation:nth-child(even){
+				padding: 1em;
+			} 
 
 		} /* end .entry-content */
 
