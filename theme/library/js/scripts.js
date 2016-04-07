@@ -128,8 +128,77 @@ function mobileNav(){
 	});
 }
 
+//Inserts the ORCID icon in the sign-in button in the top navigation
 function insertOrcidIcon(){
 	$(".nav .login.btn a").prepend('<img src="/wp-content/themes/aurora/library/images/orcid_64x64.png" class="icon icon-on-left" />');
+}
+
+//Performs custom Slaask functionality
+function slaaskCustomization(){
+	
+	var slaaskOptions = {
+			closeMsg: "(Visitor has closed the chat.)",
+			leaveMsg: "(Visitor has left the page.)",
+			openMsg: "(Visitor has opened the chat.)"
+	}
+	
+	//When the chat window is open, send a message
+	document.addEventListener('slaask.open', function (e) { 		
+		//First hide all the messages that the user doesn't need to see
+		$("#slaask-widget-container .conversation-text p:contains('" + slaaskOptions.closeMsg + "')").parents(".conversation-text").hide();
+		$("#slaask-widget-container .conversation-text p:contains('" + slaaskOptions.openMsg + "')").parents(".conversation-text").hide();
+		//$("#slaask-widget-container .conversation-text p:contains('" + slaaskOptions.leaveMsg + "')").parents(".conversation-text").hide();
+		
+		//If we're not currently chatting, exit
+		if(!isChatting()) return;
+
+		//Send a message that the user has reopened the chat
+		$.ajax({
+			type: "POST",
+			url: _slaask.post_url + "/api/publish",
+			data: JSON.stringify({
+				key: _slaask.api_key,
+				guest_id: _slaask.guest_id,
+				message: slaaskOptions.openMsg,
+				user_group_id: _slaask.user_group_id,
+				hidden: true
+			}),
+			contentType: "application/json"
+		});
+	}, false);
+	
+	//When the chat window is closed, send a message
+	document.addEventListener('slaask.close', function (e) { 
+		//If we're not currently chatting, exit
+		if(!isChatting()) return;
+		
+		$.ajax({
+			type: "POST",
+			url: _slaask.post_url + "/api/publish",
+			data: JSON.stringify({
+				key: _slaask.api_key,
+				guest_id: _slaask.guest_id,
+				message: slaaskOptions.closeMsg,
+				user_group_id: _slaask.user_group_id,
+				hidden: true
+			}),
+			contentType: "application/json"
+		});
+	}, false);
+	
+	function isChatting(){
+		if(!slaask.available) return false;
+		
+		var messages = $("#conversation-list").children("li");
+		
+		//If there are no messages, then no
+		if(!messages.length) return false;
+		//If there is only one message in the widget, and its from us, then no
+		else if((messages.length == 1) && (messages.first().find(".chat-avatar").length > 1)) return false;
+		//If the conversation has been marked as closed, then no
+		else if(messages.last().find(".slaask-notification").text().indexOf("marked as closed") > -1) return false;
+		else return true;	
+	}
 }
 
 /*
@@ -148,6 +217,8 @@ jQuery(document).ready(function($) {
   mobileNav();
   
   insertOrcidIcon();
+  
+  slaaskCustomization();
   
   /* Google Analyics */
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
