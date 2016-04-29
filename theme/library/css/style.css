@@ -2776,10 +2776,13 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-a:link.btn,
+a:link.btn, .entry-content a.publications-view-dataset-link:link,
 a:visited.btn,
+.entry-content a.publications-view-dataset-link:visited,
 a.btn,
-.btn {
+.entry-content a.publications-view-dataset-link,
+.btn,
+.entry-content a.publications-view-dataset-link {
   display: inline-block;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -2791,31 +2794,40 @@ a.btn,
   border: #146660 solid 1px;
   text-shadow: none;
   transition: all 500ms; }
-  a:link.btn.primary,
+  a:link.btn.primary, .entry-content a.publications-view-dataset-link:link.primary,
   a:visited.btn.primary,
+  .entry-content a.publications-view-dataset-link:visited.primary,
   a.btn.primary,
-  .btn.primary {
+  .entry-content a.primary.publications-view-dataset-link,
+  .btn.primary,
+  .entry-content a.primary.publications-view-dataset-link {
     background-color: #19B36A;
     color: #FFFFFF; }
-    a:link.btn.primary:hover,
+    a:link.btn.primary:hover, .entry-content a.publications-view-dataset-link:link.primary:hover,
     a:visited.btn.primary:hover,
+    .entry-content a.publications-view-dataset-link:visited.primary:hover,
     a.btn.primary:hover,
-    .btn.primary:hover {
+    .entry-content a.primary.publications-view-dataset-link:hover,
+    .btn.primary:hover,
+    .entry-content a.primary.publications-view-dataset-link:hover {
       transition: background-color 500ms;
       background-color: #146660; }
-  a:link.btn:hover a,
+  a:link.btn:hover a, .entry-content a.publications-view-dataset-link:link:hover a,
   a:visited.btn:hover a,
+  .entry-content a.publications-view-dataset-link:visited:hover a,
   a.btn:hover a,
-  .btn:hover a {
+  .entry-content a.publications-view-dataset-link:hover a,
+  .btn:hover a,
+  .entry-content a.publications-view-dataset-link:hover a {
     background-color: #146660;
     color: #FFFFFF; }
 
-.nav .menu-item.btn {
+.nav .menu-item.btn, .nav .entry-content a.menu-item.publications-view-dataset-link, .entry-content .nav a.menu-item.publications-view-dataset-link {
   border-width: 0px;
   margin: 0px;
   border-radius: 4px;
   display: block; }
-  .nav .menu-item.btn a {
+  .nav .menu-item.btn a, .nav .entry-content a.menu-item.publications-view-dataset-link a, .entry-content .nav a.menu-item.publications-view-dataset-link a {
     background-color: #f5f5f5;
     color: #666;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -2830,30 +2842,30 @@ a.btn,
     padding: 12px;
     margin-top: -2px;
     transition: background-color 500ms; }
-    .nav .menu-item.btn a:hover {
+    .nav .menu-item.btn a:hover, .nav .entry-content a.menu-item.publications-view-dataset-link a:hover, .entry-content .nav a.menu-item.publications-view-dataset-link a:hover {
       background-color: #DDD; }
-  .nav .menu-item.btn.btn-primary a {
+  .nav .menu-item.btn.btn-primary a, .nav .entry-content a.menu-item.btn-primary.publications-view-dataset-link a, .entry-content .nav a.menu-item.btn-primary.publications-view-dataset-link a {
     background-color: #19B36A;
     color: #FFFFFF;
     text-shadow: none;
     border-width: 0px; }
-    .nav .menu-item.btn.btn-primary a:hover {
+    .nav .menu-item.btn.btn-primary a:hover, .nav .entry-content a.menu-item.btn-primary.publications-view-dataset-link a:hover, .entry-content .nav a.menu-item.btn-primary.publications-view-dataset-link a:hover {
       background-color: #146660;
       text-shadow: none; }
-  .nav .menu-item.btn.login a {
+  .nav .menu-item.btn.login a, .nav .entry-content a.menu-item.login.publications-view-dataset-link a, .entry-content .nav a.menu-item.login.publications-view-dataset-link a {
     border: 1px solid #146660;
     color: #146660;
     background-color: #FFFFFF;
     text-shadow: none; }
-    .nav .menu-item.btn.login a:hover, .nav .menu-item.btn.login a:focus {
+    .nav .menu-item.btn.login a:hover, .nav .entry-content a.menu-item.login.publications-view-dataset-link a:hover, .entry-content .nav a.menu-item.login.publications-view-dataset-link a:hover, .nav .menu-item.btn.login a:focus, .nav .entry-content a.menu-item.login.publications-view-dataset-link a:focus, .entry-content .nav a.menu-item.login.publications-view-dataset-link a:focus {
       background-color: #146660;
       color: #FFFFFF; }
-    .nav .menu-item.btn.login a img.icon {
+    .nav .menu-item.btn.login a img.icon, .nav .entry-content a.menu-item.login.publications-view-dataset-link a img.icon, .entry-content .nav a.menu-item.login.publications-view-dataset-link a img.icon {
       height: 20px;
       position: relative;
       top: 5px; }
 
-[class*='col-'].btn {
+[class*='col-'].btn, .entry-content a[class*='col-'].publications-view-dataset-link {
   margin-right: 1em; }
 
 /******************************************************************
@@ -3181,6 +3193,12 @@ body {
 .hidden {
   display: none; }
 
+.warning {
+  color: #c09853;
+  padding: 1em;
+  border: 1px solid #c09853;
+  background-color: #fcf8e3; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -3291,7 +3309,8 @@ h5, .h5 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-.colored {
+.colored,
+a.colored, a:visited.colored, a:link.colored {
   color: #19B36A; }
 
 .suptitle {
@@ -3350,14 +3369,15 @@ a.brand {
     font-weight: lighter;
     font-size: 3em;
     font-family: AllerLight;
-    text-align: center; }
+    text-align: center;
+    color: #1f254f; }
   .entry-content .display-text-w-image article {
     background-color: rgba(26, 29, 51, 0.8);
     padding: 3em;
     border-radius: 4px; }
     .entry-content .display-text-w-image article a {
       color: #19B36A; }
-    .entry-content .display-text-w-image article .btn.display {
+    .entry-content .display-text-w-image article .btn.display, .entry-content .display-text-w-image article a.display.publications-view-dataset-link {
       color: #a7d7d4;
       border: 3px solid #a7d7d4; }
 
@@ -3448,17 +3468,28 @@ h1.page-title {
 .entry-content > h2:first-child {
   margin-top: 0px; }
 
-/* Titles in feed form, such as on category pages */
+/* Feed form, such as on category pages */
 .category .post {
-  background-color: #ECF2F5;
   border-color: #b8cad2;
   margin-top: 1em;
-  margin-bottom: 1em; }
-.category .entry-title {
-  font-size: 1.5em;
-  line-height: 1.5em; }
-.category .hentry header {
-  padding: 1em; }
+  margin-bottom: 1em;
+  /* Featured images */ }
+  .category .post .entry-header {
+    padding: 1em;
+    padding-left: 0px; }
+  .category .post .entry-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: bold; }
+  .category .post .entry-content {
+    padding-left: 0px;
+    padding-top: 0px; }
+  .category .post.has-post-thumbnail .entry-content > img.wp-post-image {
+    float: left;
+    margin-right: 20px;
+    height: 100%;
+    width: 50%;
+    max-width: 500px; }
 
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -3487,7 +3518,8 @@ h1.page-title {
   a bit difficult. It's set to start aligning
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
-  */ }
+  */
+  /* Publication page */ }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
@@ -3570,6 +3602,14 @@ h1.page-title {
     background-position: 0px 50%;
     margin-bottom: 4em;
     margin-top: 4em; }
+  .entry-content a.publications-view-dataset-link {
+    padding: .1em .5em !important;
+    margin-left: .5em; }
+  .entry-content p.publications-citation:nth-child(odd) {
+    background-color: #EFEFEF;
+    padding: 1em; }
+  .entry-content .publications-citation:nth-child(even) {
+    padding: 1em; }
 
 /* end .entry-content */
 .wp-caption {
@@ -3954,6 +3994,25 @@ you can add resource intensive styles.
         margin-top: 0.75em;
         padding-left: 1em; }
 
+  .entry-content .side-menu {
+    position: fixed;
+    padding-left: 0px;
+    font-size: 1.1em;
+    padding: 1em;
+    line-height: 2em;
+    width: 25%; }
+    .entry-content .side-menu > li {
+      list-style: none;
+      padding-left: 0p;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+      min-width: 100%; }
+    .entry-content .side-menu ~ *, .entry-content .side-menu ~ p {
+      margin-left: 25%;
+      width: 75%;
+      display: block; }
+
   /* links widget */
   /* meta widget */
   /* pages widget */
@@ -4034,6 +4093,9 @@ you can add resource intensive styles.
 
   .col-1-8 {
     width: 12.5%; }
+
+  .col-3-4 {
+    width: 75%; }
 
   .offset-1-4 {
     margin-left: 25%; }

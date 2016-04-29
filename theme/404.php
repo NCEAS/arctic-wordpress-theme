@@ -16,7 +16,7 @@
 
 							<section class="entry-content">
 
-								<h3>Did you came to this page from an aoncadis.org ACADIS Gateway web address?</h3>
+								<h3>Did you come to this page from an aoncadis.org ACADIS Gateway web address?</h3>
 								<p>As of March 2016, the primary repository for NSF Arctic research has transitioned from the ACADIS Gateway to the NSF Arctic Data Center.
 								All data in the ACADIS Gateway has been transferred to the NSF Arctic Data Center. <a href="/catalog">Search for <strong>data</strong> in the NSF Arctic Data Center catalog.</a></p>
 								<p>You can search for other content below:</p>

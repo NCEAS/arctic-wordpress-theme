@@ -2498,6 +2498,25 @@ SIDEBARS & ASIDES
       margin-top: 0.75em;
       padding-left: 1em; }
 
+.entry-content .side-menu {
+  position: fixed;
+  padding-left: 0px;
+  font-size: 1.1em;
+  padding: 1em;
+  line-height: 2em;
+  width: 25%; }
+  .entry-content .side-menu > li {
+    list-style: none;
+    padding-left: 0p;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    min-width: 100%; }
+  .entry-content .side-menu ~ *, .entry-content .side-menu ~ p {
+    margin-left: 25%;
+    width: 75%;
+    display: block; }
+
 /* links widget */
 /* meta widget */
 /* pages widget */

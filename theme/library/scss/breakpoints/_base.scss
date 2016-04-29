@@ -31,6 +31,12 @@ body {
 .hidden{
 	display: none;
 }
+.warning{
+	color: #c09853;
+	padding: $pad;
+	border: 1px solid #c09853;
+	background-color: #fcf8e3;
+}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -407,22 +413,37 @@ POSTS & CONTENT STYLES
 			margin-top: 0px;
 		}
 			
-		/* Titles in feed form, such as on category pages */
+		/* Feed form, such as on category pages */
 		.category{
 		
 			.post{
-				background-color: #ECF2F5;
 				border-color: $aurora-gray-blue;
 				margin-top: 1em; margin-bottom: 1em;
-			}
+				
+				.entry-header{
+					padding: $pad;
+					padding-left: 0px;
+				}
 		
-			 .entry-title{
-				font-size: 1.5em;
-				line-height: 1.5em;
-			}
-			
-			.hentry header{
-				padding: $pad;
+				 .entry-title{
+					font-size: 1.5em;
+					line-height: 1.5em;
+					font-weight: bold;
+				}
+				
+				.entry-content{
+					padding-left: 0px;
+					padding-top: 0px;
+				}
+				
+				/* Featured images */
+				&.has-post-thumbnail .entry-content > img.wp-post-image{
+					float: left;
+				    margin-right: 20px;
+				    height: 100%;
+				    width: 50%;
+				    max-width: 500px;
+				}
 			}
 		}	
 
