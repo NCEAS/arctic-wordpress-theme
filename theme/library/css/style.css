@@ -3322,6 +3322,14 @@ a.colored, a:visited.colored, a:link.colored {
     margin-top: 0px; }
 
 /*********************
+IMAGE STYLES
+*********************/
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*********************
 HEADER STYLES
 *********************/
 .header {
@@ -3354,7 +3362,7 @@ a.brand {
 .entry-content .display-text-w-image {
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 400px;
   padding: 50px; }
   .entry-content .display-text-w-image > * {
     max-width: 1024px;
@@ -3365,12 +3373,19 @@ a.brand {
     color: #333; }
     .entry-content .display-text-w-image.light > * article {
       background-color: rgba(255, 255, 255, 0.5); }
+  .entry-content .display-text-w-image .read-more {
+    color: #0dff93;
+    font-weight: bold; }
   .entry-content .display-text-w-image h1 {
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 3em;
     font-family: AllerLight;
     text-align: center;
-    color: #1f254f; }
+    color: #FFF; }
+  .entry-content .display-text-w-image .btn.display, .entry-content .display-text-w-image a.display.publications-view-dataset-link {
+    border-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold; }
   .entry-content .display-text-w-image article {
     background-color: rgba(26, 29, 51, 0.8);
     padding: 3em;

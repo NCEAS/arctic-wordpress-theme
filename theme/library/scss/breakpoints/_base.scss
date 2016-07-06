@@ -187,6 +187,15 @@ a.colored, a:visited.colored, a:link.colored{
 }
 
 /*********************
+IMAGE STYLES
+*********************/
+.center-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********************
 HEADER STYLES
 *********************/
 
@@ -230,7 +239,7 @@ a.brand{
 .entry-content .display-text-w-image{
 	background-size: cover; 
 	background-repeat: no-repeat; 
-	min-height: 600px; 
+	min-height: 400px; 
 	padding: 50px;
 	
 	> *{
@@ -247,13 +256,21 @@ a.brand{
 			background-color: rgba(255, 255, 255, 0.5);
 		}
 	}
-	
+	.read-more{
+    	color: $aurora-light-green;
+    	font-weight: bold;
+	}
 	h1{ 
-		font-weight: lighter; 
+		font-weight: bold; 
 		font-size: 3em; 
 		font-family: AllerLight;
 		text-align: center;
-		color: $aurora-purple;
+		color: #FFF;
+	}
+	.btn.display{
+		border-color: #FFF;
+		background-color: rgba(255,255,255,0.8);
+		font-weight: bold; 	
 	}
 	article{ 
 		background-color: rgba(26, 29, 51, 0.8); 
