@@ -2404,6 +2404,7 @@ a:focus, a:hover {
 
 .nav {
   border: 0;
+  padding-left: 0px;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }

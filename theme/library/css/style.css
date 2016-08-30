@@ -3337,7 +3337,7 @@ HEADER STYLES
   padding: 0px 0px 1em 0px; }
   .header .nav {
     color: #1f254f;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .header .border-image {
     background-image: url("../images/border-image-481.jpg");
@@ -3915,6 +3915,7 @@ you can add resource intensive styles.
 
   .nav {
     border: 0;
+    padding-left: 0px;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }

@@ -3,8 +3,9 @@
 				<div id="inner-footer" class="wrap cf">
 					
 					<div class="col-1-2">
-						<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand"><img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo.png" />
-						<span>NSF Arctic Data Center</span></a>
+						<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand">
+							<img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo_.png" title="Arctic Data Center" alt="Arctic Data Center"/>
+						</a>
 					</div>
 					
 					<nav role="navigation">

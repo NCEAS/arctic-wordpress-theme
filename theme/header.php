@@ -50,8 +50,9 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<a href="<?php echo home_url(); ?>" rel="nofollow" id="logo" class="h1 brand" itemscope itemtype="http://schema.org/Organization"><img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo.png" />
-					<span>NSF Arctic Data Center</span></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow" id="logo" class="h1 brand" itemscope itemtype="http://schema.org/Organization">
+						<img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo_.png" alt="Arctic Data Center" title="Arctic Data Center"/>
+					</a>
 
 					<a id="nav-trigger"><i class="fa fa-bars icon"></i><i class="fa fa-close icon hidden"></i></a>
 
