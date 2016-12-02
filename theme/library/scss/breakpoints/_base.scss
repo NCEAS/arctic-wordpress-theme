@@ -462,6 +462,21 @@ POSTS & CONTENT STYLES
 				    max-width: 500px;
 				}
 			}
+		}
+		
+		/* Display posts plugin - post feeds */
+		.display-posts-listing, .display-posts-listing li {
+    		list-style: none;
+		    padding-left: 0px;
+		    
+		    .title{
+		    	@extend .h2;
+		    	display: block;
+		    }
+		    
+		    .date{
+		    	font-weight: bold;
+		    }
 		}	
 
 		.single-title {}

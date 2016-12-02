@@ -3274,7 +3274,7 @@ a, a:visited {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, .h1, h2, .h2, .display-posts-listing .title, .display-posts-listing li .title, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -3282,7 +3282,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */ }
-  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  h1 a, .h1 a, h2 a, .h2 a, .display-posts-listing .title a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none;
     color: #1f254f; }
 
@@ -3291,7 +3291,7 @@ h1, .h1 {
   line-height: 1.333em;
   font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-h2, .h2 {
+h2, .h2, .display-posts-listing .title, .display-posts-listing li .title {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
@@ -3505,6 +3505,15 @@ h1.page-title {
     height: 100%;
     width: 50%;
     max-width: 500px; }
+
+/* Display posts plugin - post feeds */
+.display-posts-listing, .display-posts-listing li {
+  list-style: none;
+  padding-left: 0px; }
+  .display-posts-listing .title, .display-posts-listing li .title {
+    display: block; }
+  .display-posts-listing .date, .display-posts-listing li .date {
+    font-weight: bold; }
 
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
