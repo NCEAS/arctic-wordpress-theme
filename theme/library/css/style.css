@@ -2731,26 +2731,19 @@ If you want to use these alerts in your design, you can. If not,
 you can just remove this stylesheet.
 
 ******************************************************************/
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid; }
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
 
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f; }
-
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8; }
-
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4; }
-
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2; }
+.alert-warning,
+.alert-warning h4 {
+  color: #c09853; }
 
 /******************************************************************
 Site Name:
