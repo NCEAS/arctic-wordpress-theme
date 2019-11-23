@@ -21,9 +21,25 @@ you can just remove this stylesheet.
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    color: #c09853;
+    
+    h4{
+    	margin-bottom: 0px;
+    	font-weight: bold;
+    	margin-top: 0px;
+    }
 }
 
-.alert-warning,
-.alert-warning h4 {
+.alert-warning {
     color: #c09853;
+}
+
+.alert-success{
+	color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.header > .alert{
+	margin-bottom: 0px;
 }

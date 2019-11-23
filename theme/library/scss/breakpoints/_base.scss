@@ -180,7 +180,7 @@ a.colored, a:visited.colored, a:link.colored{
     font-weight: normal;
     font-style: italic;
     color: #DDD;
-    
+
     + h1{
     	margin-top: 0px;
     }
@@ -200,15 +200,15 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $white;	
+	background-color: $white;
 	padding: 0px 0px $pad 0px;
-	
+
 	.nav{
 		color: $aurora-purple;
-		font-size: 1.2em; 
-		font-family: $header-fonts;		
+		font-size: 1.2em;
+		font-family: $header-fonts;
 	}
-	
+
 	.border-image{
 		background-image: url('../images/border-image-481.jpg');
 		background-size: cover;
@@ -225,7 +225,7 @@ HEADER STYLES
     	font-family: $brand-fonts;
     	vertical-align: bottom;
 	}
-	
+
 	img{
 		height: 50px;
 		width: auto;
@@ -237,21 +237,21 @@ a.brand{
 }
 
 .entry-content .display-text-w-image{
-	background-size: cover; 
-	background-repeat: no-repeat; 
-	min-height: 400px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 400px;
 	padding: 50px;
-	
+
 	> *{
-		max-width: 1024px; 
-		margin-left: auto; 
+		max-width: 1024px;
+		margin-left: auto;
 		margin-right: auto;
 		color: white;
 	}
-	
+
 	&.light > *{
 		color: #333;
-		
+
 		article{
 			background-color: rgba(255, 255, 255, 0.5);
 		}
@@ -260,9 +260,9 @@ a.brand{
     	color: $aurora-light-green;
     	font-weight: bold;
 	}
-	h1{ 
-		font-weight: bold; 
-		font-size: 3em; 
+	h1{
+		font-weight: bold;
+		font-size: 3em;
 		font-family: AllerLight;
 		text-align: center;
 		color: #FFF;
@@ -270,17 +270,17 @@ a.brand{
 	.btn.display{
 		border-color: #FFF;
 		background-color: rgba(255,255,255,0.8);
-		font-weight: bold; 	
+		font-weight: bold;
 	}
-	article{ 
-		background-color: rgba(26, 29, 51, 0.8); 
+	article{
+		background-color: rgba(26, 29, 51, 0.8);
 		padding: 3em;
 		border-radius: 4px;
-		
+
 		a{
 			color: $aurora-green;
 		}
-		
+
 		.btn.display{
 		    color: #a7d7d4;
     		border: 3px solid #a7d7d4;
@@ -300,7 +300,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.header{ 
+.header{
 	nav{
 		width: 100%;
     	display: none;
@@ -334,7 +334,7 @@ and more scalable.
 
 		ul.sub-menu,
 		ul.children {
-		
+
 			display: none;
 			padding-left: 0px;
 
@@ -342,14 +342,14 @@ and more scalable.
 				background-color: $aurora-purple;
 				border-bottom: 1px solid #ccc;
 				font-size: .8em;
-							
+
 				&.btn{
 					width: 100%;
 				}
 
 				a {
 					color: #FFF;
-					
+
 					&:hover,
 					&:focus {}
 
@@ -364,7 +364,7 @@ and more scalable.
 			}
 
 		}
-		
+
 		&.smaller{
 		    font-size: .8em;
     		line-height: 2.5em;
@@ -414,12 +414,12 @@ POSTS & CONTENT STYLES
 		.page-title,
 		.entry-title {
 			margin: 0;
-			
+
     		font-size: 2.1em;
     		line-height: 1.4em;
     		font-family: $display-fonts;
 		}
-		
+
 		h1.page-title{
 			font-size: 2em;
 			color: $black;
@@ -429,55 +429,61 @@ POSTS & CONTENT STYLES
 		.entry-content > h2:first-child{
 			margin-top: 0px;
 		}
-			
+
 		/* Feed form, such as on category pages */
 		.category{
-		
+
 			.post{
 				border-color: $aurora-gray-blue;
 				margin-top: 1em; margin-bottom: 1em;
-				
+
 				.entry-header{
 					padding: $pad;
 					padding-left: 0px;
 				}
-		
+
 				 .entry-title{
 					font-size: 1.5em;
 					line-height: 1.5em;
 					font-weight: bold;
 				}
-				
+
 				.entry-content{
 					padding-left: 0px;
 					padding-top: 0px;
 				}
-				
+
 				/* Featured images */
 				&.has-post-thumbnail .entry-content > img.wp-post-image{
-					float: left;
-				    margin-right: 20px;
-				    height: 100%;
-				    width: 50%;
-				    max-width: 500px;
+          float: left;
+          margin-right: 40px;
+          width: auto;
+          height: 233px;
+          padding: 10px;
+          border: 1px solid #CCC;
+          border-radius: 4px;
 				}
+
+        &.has-post-thumbnail .entry-content p{
+          margin: 1.5em 0 1.5em;
+        }
 			}
 		}
-		
+
 		/* Display posts plugin - post feeds */
 		.display-posts-listing, .display-posts-listing li {
     		list-style: none;
 		    padding-left: 0px;
-		    
+
 		    .title{
 		    	@extend .h2;
 		    	display: block;
 		    }
-		    
+
 		    .date{
 		    	font-weight: bold;
 		    }
-		}	
+		}
 
 		.single-title {}
 
@@ -505,12 +511,12 @@ POSTS & CONTENT STYLES
 
 			time {}
 		}
-		
+
 		.excerpt-read-more{
 			display: block;
 			margin-top: $pad;
 		}
-		
+
 		/* entry content */
 		.entry-content {
 			padding: 1.5em 1.5em 0;
@@ -591,7 +597,7 @@ POSTS & CONTENT STYLES
 				&:before {}
 
 			}
-			
+
 			.aside{
 			    color: #666;
 			    font-style: normal;
@@ -616,7 +622,7 @@ POSTS & CONTENT STYLES
 				max-width: 100%;
 				height: auto;
 			}
-			
+
 			h2 img, h3 img, h4 img, h5 img{
 				height: 1em;
 				width: auto;
@@ -640,7 +646,7 @@ POSTS & CONTENT STYLES
 				max-width: 100%;
 				height: auto;
 			}
-			
+
 			.size-small.size-square{
 				height: 150px; width: 150px;
 			    max-width: 150px;
@@ -648,7 +654,7 @@ POSTS & CONTENT STYLES
     			min-width: 90px;
     			min-height: 90px;
 			}
-			
+
 			.circle{
 				border-radius: 50%;
 			}
@@ -661,7 +667,7 @@ POSTS & CONTENT STYLES
 				margin: 0 0 1.5em;
 				border-radius: 3px;
 			}
-			
+
 			.border-image{
 			    height: 300px;
 			    width: 100%;
@@ -671,7 +677,7 @@ POSTS & CONTENT STYLES
 			    margin-bottom: 4em;
 			    margin-top: 4em;
 			}
-			
+
 			/* Publication page */
 			a.publications-view-dataset-link{
 				@extend .btn;
@@ -684,7 +690,7 @@ POSTS & CONTENT STYLES
 			}
 			.publications-citation:nth-child(even){
 				padding: 1em;
-			} 
+			}
 
 		} /* end .entry-content */
 
@@ -736,9 +742,9 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
-	
+
 .purple-bg{
-	
+
 	background-color: $aurora-purple;
 }
 
@@ -826,7 +832,7 @@ IMAGE STYLES
 ******************************************************************/
 .logos{
 	margin-top: $pad-large;
-	
+
 	a{
 		background-image: url('../images/footer-logos.png');
 		background-repeat: no-repeat;
@@ -835,7 +841,7 @@ IMAGE STYLES
 		margin-right: $pad-small;
 		display: inline-block;
 	}
-	
+
 	.nceas-logo{
 		width: 65px;
 		background-position: 0px 0px;
@@ -921,19 +927,19 @@ FOOTER STYLES
 			li {}
 
 		}
-		
+
 		.nav-title{
 			color: #666;
 			font-family: $display-fonts;
 		}
 
 	} /* end .footer-links */
-	
+
 	.logos{
 		img{
 			opacity: .8;
 		}
-	
+
 		a:hover, a:focus{
 			opacity: 1;
 			transition: opacity 500ms;
@@ -941,5 +947,3 @@ FOOTER STYLES
 	}
 
 }
-
-
