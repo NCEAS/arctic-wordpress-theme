@@ -57,6 +57,10 @@ function aurora_ahoy() {
   add_filter( 'the_content', 'aurora_filter_ptags_on_images' );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'aurora_excerpt_more' );
+  
+  //Give editors access to theme options
+  $role = get_role('editor');
+  $role->add_cap('edit_theme_options');
 
 } /* end bones ahoy */
 
@@ -165,6 +169,27 @@ function aurora_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
+	
+	register_sidebar(array(
+		'id' => 'top_banner',
+		'name' => __( 'Top Banner', 'auroratheme' ),
+		'description' => __( 'A banner that displays at the top of the page above the header.', 'auroratheme' ),
+		'before_widget' => '<div id="%1$s" class="alert alert-success %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+	
+	register_sidebar(array(
+			'id' => 'top_banner_warning',
+			'name' => __( 'Top Warning Banner (Yellow)', 'auroratheme' ),
+			'description' => __( 'A yellow warning banner that displays at the top of the page above the header.', 'auroratheme' ),
+			'before_widget' => '<div id="%1$s" class="alert alert-warning %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h4>',
+			'after_title' => '</h4>',
+	));
+	
 
 	/*
 	to add more sidebars or widgetized areas, just copy

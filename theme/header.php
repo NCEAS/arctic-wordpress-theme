@@ -37,6 +37,77 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		
+		<script type="application/ld+json" id="jsonld">
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/"
+    },
+    "@type": ["Service", "ResearchProject"],
+    "@id": "https://arcticdata.io",
+    "identifier": {
+        "@type": ["PropertyValue", "datacite:OrganizationIdentifier"],
+        "propertyID": "DOI",
+        "value": "10.17616/R37P98",
+        "url": "https://doi.org/10.17616/R37P98"
+    },
+    "name": "Arctic Data Center",
+    "legalName": "Arctic Data Center",
+    "sameAs": [
+        "https://www.re3data.org/repository/r3d100011973",
+        "http://doi.org/10.17616/R37P98",
+        "urn:node:ARCTIC"
+    ],
+    "url": "https://arcticdata.io",
+    "description": "The Arctic Data Center is the primary data and software repository for the Arctic section of NSF Polar Programs.",
+    "category": [
+        "Arctic Research"
+    ],
+    "provider": {
+        "@id": "https://arcticdata.io"
+    },
+    "funder": {
+        "@type": "Organization",
+        "@id": "https://doi.org/10.13039/100000087",
+        "legalName": "Office of Polar Programs",
+        "alternateName": "OPP",
+        "url": "https://www.nsf.gov/div/index.jsp?div=OPP",
+        "identifier": {
+            "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
+            "propertyID": "DOI",
+            "value": "10.13039/100000087",
+            "url": "https://doi.org/10.13039/100000087"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "http://doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "identifier": {
+                "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
+                "propertyID": "DOI",
+                "value": "10.13039/100000085",
+                "url": "https://doi.org/10.13039/100000085"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov",
+                "identifier": {
+                    "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
+                    "propertyID": "DOI",
+                    "value": "10.13039/100000001",
+                    "url": "https://doi.org/10.13039/100000001"
+                }
+            }
+        }
+    }
+}
+</script>
 
 	</head>
 
@@ -45,6 +116,17 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			
+			<?php if ( is_active_sidebar( 'top_banner' ) ) : ?>
+
+						<?php dynamic_sidebar( 'top_banner' ); ?>
+			<?php endif; ?>
+			
+			
+			<?php if ( is_active_sidebar( 'top_banner_warning' ) ) : ?>
+
+						<?php dynamic_sidebar( 'top_banner_warning' ); ?>
+			<?php endif; ?>
 
 				<div class="border-image" role="img"></div>
 
