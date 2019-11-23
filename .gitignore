@@ -2,3 +2,5 @@
 .DS_Store
 *.project
 .project
+theme/.sass-cache
+.sass-cache
