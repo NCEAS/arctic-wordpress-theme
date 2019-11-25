@@ -456,17 +456,11 @@ POSTS & CONTENT STYLES
 				/* Featured images */
 				&.has-post-thumbnail .entry-content > img.wp-post-image{
           float: left;
-          margin-right: 40px;
-          width: auto;
-          height: 233px;
-          padding: 10px;
-          border: 1px solid #CCC;
-          border-radius: 4px;
+          margin-right: 20px;
+          height: 100%;
+          width: 30%;
+          max-width: 500px;
 				}
-
-        &.has-post-thumbnail .entry-content p{
-          margin: 1.5em 0 1.5em;
-        }
 			}
 		}
 

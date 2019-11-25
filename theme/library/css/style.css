@@ -3506,14 +3506,10 @@ h1.page-title {
     padding-top: 0px; }
   .category .post.has-post-thumbnail .entry-content > img.wp-post-image {
     float: left;
-    margin-right: 40px;
-    width: auto;
-    height: 233px;
-    padding: 10px;
-    border: 1px solid #CCC;
-    border-radius: 4px; }
-  .category .post.has-post-thumbnail .entry-content p {
-    margin: 1.5em 0 1.5em; }
+    margin-right: 20px;
+    height: 100%;
+    width: 30%;
+    max-width: 500px; }
 
 /* Display posts plugin - post feeds */
 .display-posts-listing, .display-posts-listing li {
