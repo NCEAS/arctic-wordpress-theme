@@ -431,7 +431,8 @@ POSTS & CONTENT STYLES
 		}
 
 		/* Feed form, such as on category pages */
-		.category{
+		.category,
+    .tag{
 
 			.post{
 				border-color: $aurora-gray-blue;

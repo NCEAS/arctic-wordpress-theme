@@ -3489,22 +3489,27 @@ h1.page-title {
   margin-top: 0px; }
 
 /* Feed form, such as on category pages */
-.category .post {
+.category .post,
+.tag .post {
   border-color: #b8cad2;
   margin-top: 1em;
   margin-bottom: 1em;
   /* Featured images */ }
-  .category .post .entry-header {
+  .category .post .entry-header,
+  .tag .post .entry-header {
     padding: 1em;
     padding-left: 0px; }
-  .category .post .entry-title {
+  .category .post .entry-title,
+  .tag .post .entry-title {
     font-size: 1.5em;
     line-height: 1.5em;
     font-weight: bold; }
-  .category .post .entry-content {
+  .category .post .entry-content,
+  .tag .post .entry-content {
     padding-left: 0px;
     padding-top: 0px; }
-  .category .post.has-post-thumbnail .entry-content > img.wp-post-image {
+  .category .post.has-post-thumbnail .entry-content > img.wp-post-image,
+  .tag .post.has-post-thumbnail .entry-content > img.wp-post-image {
     float: left;
     margin-right: 20px;
     height: 100%;
