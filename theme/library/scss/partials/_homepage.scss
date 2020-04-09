@@ -1,0 +1,49 @@
+.home{
+  #content{ margin-top: 0px }
+  #inner-content{ width: 100%; }
+  .article-header{ display: none; }
+  .entry-content{ padding: 0px;}
+  .display-text-w-image{
+
+    &.mountains{ background-image: url(/wp-content/uploads/Mountains.jpg); }
+    &.desk{ background-image: url(/wp-content/uploads/table-coffe-pen.jpg); }
+    &.training{
+      background-image: url(/wp-content/uploads/training-2.jpg);
+      background-position-y: 60%;
+      min-height: 500px;
+    }
+    &.desk a,
+    &.training a{
+    color: #6b7cf7;
+    }
+    &.ceo{
+      background-image: url(/wp-content/uploads/helpdesk.jpg);
+      background-position-y: 60%;
+      min-height: 500px;
+    }
+    &.permafrost{
+       background-image: url(https://arcticdata.io/metacat/d1/mn/v2/object/urn:uuid:701022e0-63f4-4cd8-8330-26c96f51454f);
+    }
+
+    a.btn-primary{
+      margin: auto;
+      text-align: center;
+      display: block;
+      max-width: 400px;
+      background-color: #18b36a;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .inner-content{
+      background-color: rgba(21, 27, 58, 0.7);
+      padding: 20px;
+      border-radius: 5px;
+    }
+  }
+
+  .border-image.family{ background-image:url('/wp-content/uploads/family.jpg') }
+  .border-image.whale{ background-image: url('/wp-content/uploads/WhaleTail.jpg'); }
+  .btn.primary{ margin-bottom: 4em; }
+}

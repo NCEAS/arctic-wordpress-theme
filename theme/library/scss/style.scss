@@ -7,7 +7,7 @@ Version: 1.0
 
 
 
-/********************** 
+/**********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
 our mixins, functions, and variables that we'll be using across
@@ -28,6 +28,9 @@ the whole project.
 
 // import mixins
 @import "partials/mixins";
+
+// import homepage styles
+@import "partials/homepage";
 
 
 /*********************
@@ -80,7 +83,7 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "breakpoints/768up";
-	
+
 	// the grid
 	@import "partials/grid";
 
