@@ -1,13 +1,15 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
-					
-					<div class="col-1-2">
+
+        <div class="footer-content">
+
+					<div class="">
 						<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand">
 							<img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo_.png" title="Arctic Data Center" alt="Arctic Data Center"/>
 						</a>
 					</div>
-					
+
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
@@ -23,9 +25,9 @@
     					'fallback_cb' => 'aurora_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-					
-					<nav role="navigation" class="footer-links cf col-1-4 offset-1-4">
-						<?php 
+
+					<nav role="navigation" class="footer-links">
+						<?php
 						wp_nav_menu(array(
     					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
     					'container_class' => '',         // class of container (should you choose to use it)
@@ -41,8 +43,13 @@
     					'fallback_cb' => 'aurora_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-
-					<div class="clearfix">
+          <div>
+            <a href="http://coretrustseal.org" target="_blank">
+              <img src="https://arcticdata.io/wp-content/uploads/coretrustseal_100px.png" class="core-trust-logo"
+                title="A CoreTrustSeal certified repository" />
+            </a>
+          </div>
+        </div>
 						<div class="logos">
 							<a class="nceas-logo" href="http://nceas.ucsb.edu" target="_blank"></a>
 							<a class="ucsb-logo" href="http://ucsb.edu" target="_blank"></a>
