@@ -41,32 +41,60 @@
 		<script type="application/ld+json" id="jsonld">
 {
     "@context": {
-        "@vocab": "http://schema.org/",
-        "datacite": "http://purl.org/spar/datacite/"
+        "@vocab": "https://schema.org/"
     },
-    "@type": ["Service", "ResearchProject"],
+    "@type": ["Service", "Organization", "ResearchProject"],
     "@id": "https://arcticdata.io",
-    "identifier": {
-        "@type": ["PropertyValue", "datacite:OrganizationIdentifier"],
-        "propertyID": "DOI",
-        "value": "10.17616/R37P98",
-        "url": "https://doi.org/10.17616/R37P98"
-    },
+    "identifier": [
+    	{
+    		"@type": "PropertyValue",
+    		"name": "Re3data DOI: 10.17616/R37P98",
+    		"propertyID": "https://registry.identifiers.org/registry/doi",
+    		"value": "doi:10.17616/R37P98",
+    		"url": "https://doi.org/10.17616/R37P98"
+	},
+    	{
+    		"@type": "PropertyValue",
+    		"name": "wikidata:Q77285095",
+    		"propertyID": "https://registry.identifiers.org/registry/wikidata",
+    		"value": "wikidata:Q77285095",
+    		"url": "https://www.wikidata.org/wiki/Q77285095"
+	},
+    	{
+    		"@type": "PropertyValue",
+    		"name": "grid:grid.507882.0",
+    		"propertyID": "https://registry.identifiers.org/registry/grid",
+    		"value": "grid:grid.507882.0",
+    		"url": "https://www.grid.ac/institutes/grid.507882.0"
+	}
+    ],
     "name": "Arctic Data Center",
     "legalName": "Arctic Data Center",
-    "sameAs": [
-        "https://www.re3data.org/repository/r3d100011973",
-        "http://doi.org/10.17616/R37P98",
-        "urn:node:ARCTIC"
-    ],
+    "logo": "https://arcticdata.io/wp-content/themes/aurora/library/images/logo_.png",
     "url": "https://arcticdata.io",
     "description": "The Arctic Data Center is the primary data and software repository for the Arctic section of NSF Polar Programs.",
+    "sameAs": [
+	    "https://ror.org/055hrh286",
+	    "https://www.grid.ac/institutes/grid.507882.0",
+	    "https://www.wikidata.org/wiki/Q77285095",
+	    "https://www.re3data.org/repository/r3d100011973",
+	    "http://doi.org/10.17616/R37P98",
+	    "urn:node:ARCTIC"
+    ],
     "category": [
         "Arctic Research"
     ],
     "provider": {
         "@id": "https://arcticdata.io"
     },
+    "contactPoint": {
+    	"@type": "ContactPoint",
+    	"name": "Support",
+    	"email": "support@arcticdata.io",
+    	"url": "https://arcticdata.io/support/",
+    	"contactType": "customer support"
+    },
+    "foundingDate": "2016-02-01",
     "funder": {
         "@type": "Organization",
         "@id": "https://doi.org/10.13039/100000087",
@@ -74,38 +102,62 @@
         "alternateName": "OPP",
         "url": "https://www.nsf.gov/div/index.jsp?div=OPP",
         "identifier": {
-            "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
-            "propertyID": "DOI",
-            "value": "10.13039/100000087",
+            "@type": ["PropertyValue"],
+            "propertyID": "https://registry.identifiers.org/registry/doi",
+            "value": "doi:10.13039/100000087",
             "url": "https://doi.org/10.13039/100000087"
         },
         "parentOrganization": {
             "@type": "Organization",
-            "@id": "http://doi.org/10.13039/100000085",
+            "@id": "https://doi.org/10.13039/100000085",
             "legalName": "Directorate for Geosciences",
             "alternateName": "NSF-GEO",
             "url": "http://www.nsf.gov",
             "identifier": {
-                "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
-                "propertyID": "DOI",
+                "@type": ["PropertyValue"],
+            	"propertyID": "https://registry.identifiers.org/registry/doi",
                 "value": "10.13039/100000085",
                 "url": "https://doi.org/10.13039/100000085"
             },
             "parentOrganization": {
                 "@type": "Organization",
-                "@id": "http://dx.doi.org/10.13039/100000001",
+                "@id": "https://doi.org/10.13039/100000001",
                 "legalName": "National Science Foundation",
                 "alternateName": "NSF",
                 "url": "http://www.nsf.gov",
                 "identifier": {
-                    "@type": ["PropertyValue", "datacite:ResourceIdentifier"],
-                    "propertyID": "DOI",
+                    "@type": ["PropertyValue"],
+            	    "propertyID": "https://registry.identifiers.org/registry/doi",
                     "value": "10.13039/100000001",
                     "url": "https://doi.org/10.13039/100000001"
                 }
             }
         }
-    }
+    },
+    "hasOfferCatalog": {
+    	"@type": "OfferCatalog",
+    	"name": "Arctic Data Center Data Catalog",
+    	"itemListElement": [
+      	{
+       		"@type": "DataCatalog",
+        	"@id": "https://arcticdata.io/catalog/data",
+        	"name": "Arctic Data Center Catalog",
+        	"audience": {
+          		"@type": "Audience",
+          		"audienceType": "public",
+          		"name": "General Public"
+        	}
+          }
+      ]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "735 State Street",
+    "addressLocality": "Santa Barbara",
+    "addressRegion": "CA",
+    "postalCode": "93101",
+    "addressCountry": "USA"
+  }
 }
 </script>
 
