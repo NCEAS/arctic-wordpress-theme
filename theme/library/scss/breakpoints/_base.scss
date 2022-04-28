@@ -145,7 +145,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
-	font-family: $display-fonts;
+	font-family: $header-fonts;
 }
 
 h2, .h2 {
@@ -417,7 +417,7 @@ POSTS & CONTENT STYLES
 
     		font-size: 2.1em;
     		line-height: 1.4em;
-    		font-family: $display-fonts;
+    		font-family: $header-fonts;
 		}
 
 		h1.page-title{

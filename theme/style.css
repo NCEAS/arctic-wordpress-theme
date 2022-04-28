@@ -3339,7 +3339,7 @@ h1, .h1, h2, .h2, .display-posts-listing .title, .display-posts-listing li .titl
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
-  font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h2, .h2, .display-posts-listing .title, .display-posts-listing li .title {
   font-size: 1.75em;
@@ -3522,7 +3522,7 @@ POSTS & CONTENT STYLES
   margin: 0;
   font-size: 2.1em;
   line-height: 1.4em;
-  font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1.page-title {
   font-size: 2em;
