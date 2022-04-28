@@ -22,4 +22,11 @@
             margin-bottom: 0px;
         }
     }
+
+    &.alt{
+        .card{
+            background-color: rgba(17, 74, 70, 0.8);
+            box-shadow: 0px 0px 10px $aurora-dark-green;
+        }
+    }
 }
