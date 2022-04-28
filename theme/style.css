@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /******************************************************************
 Theme Name: Aurora
-Theme URI: http://arcticdata.io
+Theme URI: https://github.com/laurenwalker/arctic-wordpress-theme
 Description: Based on the Bones Development Theme
 Author URI: http://www.nceas.ucsb.edu/ecoinformatics
 Version: 1.0
@@ -2717,7 +2717,7 @@ probably best not to use it. I mean, were you going to anyway? */
 #content.big-background-image {
   margin-top: -135px;
   padding-top: 150px;
-  background-image: url(http://localhost:8000/arcticwp/wp-content/uploads/2022/04/ss-bg1-scaled.jpg);
+  background-image: url(https://arcticdata.io/wp-content/uploads/man-on-ice-scaled.jpg);
   background-color: #5c68a8;
   background-size: cover;
   background-repeat: repeat-x;
