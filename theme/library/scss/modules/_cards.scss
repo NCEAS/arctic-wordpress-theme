@@ -1,0 +1,25 @@
+.wp-block-columns.cards{
+
+    .card{
+        background-color: rgba(31, 37, 79, 0.8);
+        border-radius: 5px;
+        padding: $pad;
+        color: $white;
+        box-shadow: 0px 0px 10px #343946;
+
+        p a,
+        p a:visited{
+            color: $white;
+        }
+
+        h4, h4 a, h4 a:visited{
+            color: $white;
+            margin-top: 0px;
+            font-weight: bold;
+        }
+
+        p:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}

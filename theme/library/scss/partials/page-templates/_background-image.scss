@@ -1,0 +1,38 @@
+#content.big-background-image{
+    margin-top:-135px;
+    padding-top:150px;
+    background-image: url(http://localhost:8000/arcticwp/wp-content/uploads/2022/04/ss-bg1-scaled.jpg);
+    background-color: #5c68a8;
+    background-size: cover;
+    background-repeat: repeat-x;
+    color: $aurora-purple;
+  
+
+    h1.page-title{
+        font-weight: bold;
+        color: $aurora-purple;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    #content.big-background-image{
+        background-position-y: -800px;
+        background-position-x: 80%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #content.big-background-image{
+        background-position-y: -900px;
+    }
+}
+@media only screen and (min-width: 1030px) {
+    #content.big-background-image{
+        background-position-y: -900px;
+        background-position-x: 70%;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    #content.big-background-image{
+        background-position-y: -900px;
+    }
+}
