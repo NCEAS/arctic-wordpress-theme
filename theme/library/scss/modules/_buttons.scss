@@ -151,3 +151,12 @@ a.btn,
 	margin-right: 1em;
 }
 
+.wp-block-button.primary a{
+	font-weight: bold;
+	background-color: $aurora-light-green;
+	color: $aurora-dark-green;
+
+	&:visited{
+		color: $aurora-dark-green;
+	}
+}
