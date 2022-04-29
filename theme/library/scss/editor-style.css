@@ -209,9 +209,6 @@ body#tinymce.wp-editor {
   use color variables properly:
   http://sachagreif.com/sass-color-variables/
   */
-  /************************
-  PADDING AND SPACING
-  *************************/
   /******************************************************************
   Site Name:
   Author:
@@ -559,10 +556,6 @@ body#tinymce.wp-editor {
   body#tinymce.wp-editor span.amp {
     font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
     font-style: italic; }
-@font-face {
-  body#tinymce.wp-editor {
-    font-family: "Aller";
-    src: url("../../library/fonts/Aller_Rg.ttf"); } }
   body#tinymce.wp-editor p {
     -ms-word-wrap: break-word;
     word-break: break-word;
@@ -580,14 +573,12 @@ body#tinymce.wp-editor {
     font-feature-settings: "liga", "dlig"; }
   body#tinymce.wp-editor .smaller {
     font-size: .8em; }
-  body#tinymce.wp-editor .subtle {
-    color: #999; }
   body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
-    color: #3341A7;
+    color: #1f254f;
     /* on hover */
     /* on click */ }
     body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
-      color: #146660; }
+      color: #12162e; }
     body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
   body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {

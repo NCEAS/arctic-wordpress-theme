@@ -39,9 +39,6 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
-/************************
-PADDING AND SPACING
-*************************/
 /******************************************************************
 Site Name:
 Author:
@@ -79,9 +76,6 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
-@font-face {
-  font-family: "Aller";
-  src: url("../../library/fonts/Aller_Rg.ttf"); }
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
@@ -109,9 +103,6 @@ p {
 
 .smaller {
   font-size: .8em; }
-
-.subtle {
-  color: #999; }
 
 /******************************************************************
 Site Name:
@@ -276,7 +267,7 @@ GENERAL STYLES
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 100%; }
+  width: 760px; }
 
 /*********************
 HEADER STYLES
@@ -284,10 +275,6 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-a:focus, a:hover {
-  color: #146660;
-  transition: color 500ms; }
-
 .nav {
   border: 0;
   /* end .menu ul li */
@@ -309,6 +296,9 @@ a:focus, a:hover {
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
+      .nav li a:hover, .nav li a:focus {
+        color: #FFFFFF;
+        text-decoration: underline; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;
@@ -383,25 +373,14 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer {
-  /* end .footer-links */ }
-  .footer .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
-  .footer .logos {
-    width: calc( 4.5em + 65px + 87px + 128px + 67px + 65px + 1.5em);
-    margin-left: auto;
-    margin-right: auto; }
+.footer-links ul li {
+  /*
+  be careful with the depth of your menus.
+  it's very rare to have multi-depth menus in
+  the footer.
+  */ }
 
-/*********************
-HEADER STYLES
-*********************/
-.header .border-image {
-  background-image: url("../images/border-image-768.jpg"); }
-
+/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:
@@ -414,12 +393,6 @@ be seen on the Desktop.
 ******************************************************************/
 .wrap {
   width: 1040px; }
-
-/*********************
-HEADER STYLES
-*********************/
-.header .border-image {
-  background-image: url("../images/border-image-1240.jpg"); }
 
 /*
 you can call the larger styles if you want, but there's really no need

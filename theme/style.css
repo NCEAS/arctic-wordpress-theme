@@ -2615,6 +2615,13 @@ code {
   color: #1f254f;
   text-transform: none; }
 
+.small-header {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
 /************************************************
  ICONS
 ************************************************/
@@ -2728,8 +2735,7 @@ probably best not to use it. I mean, were you going to anyway? */
 
 @media only screen and (min-width: 481px) {
   #content.big-background-image {
-    background-position-y: -800px;
-    background-position-x: 80%; } }
+    background-position-y: -800px; } }
 @media only screen and (min-width: 768px) {
   #content.big-background-image {
     background-position-y: -900px; } }
@@ -2898,6 +2904,13 @@ a.btn,
 
 [class*='col-'].btn, .entry-content a[class*='col-'].publications-view-dataset-link {
   margin-right: 1em; }
+
+.wp-block-button.primary a {
+  font-weight: bold;
+  background-color: #0dff93;
+  color: #146660; }
+  .wp-block-button.primary a:visited {
+    color: #146660; }
 
 /******************************************************************
 Site Name:
@@ -3207,6 +3220,9 @@ select {
   background-color: rgba(10, 62, 58, 0.8);
   box-shadow: 0px 0px 10px #031110; }
 
+.simple-cards {
+  text-align: center; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -3230,7 +3246,7 @@ GENERAL STYLES
 *********************/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   line-height: 1.5;
   color: #333333;
   background-color: #b8cad2;
