@@ -1,3 +1,8 @@
-body.home #content.big-background-image{
+body.home #content{
+
+ background-color: #d1e2f0;
+
+ &.big-background-image{
   background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg);
+ }
 }

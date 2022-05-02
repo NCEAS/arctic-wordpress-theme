@@ -1,4 +1,4 @@
-<?php /* Template Name: Social Science Page */ ?>
+<?php /* Template Name: Background Image */ ?>
 
 <?php get_header(); ?>
 
