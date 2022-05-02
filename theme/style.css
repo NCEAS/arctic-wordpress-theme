@@ -3406,7 +3406,7 @@ HEADER STYLES
     font-size: 1.2em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .header .border-image {
-    background-image: url("../images/border-image-481.jpg");
+    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg");
     background-size: cover;
     height: 25px;
     width: 100%;
@@ -4146,7 +4146,7 @@ you can add resource intensive styles.
   .header {
     /* Take nav out of mobile-style */ }
     .header .border-image {
-      background-image: url("../images/border-image-768.jpg"); }
+      background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-768.jpg"); }
     .header #nav-trigger {
       display: none; }
     .header nav {
@@ -4246,7 +4246,7 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   .header .border-image {
-    background-image: url("../images/border-image-1240.jpg"); } }
+    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-1240.jpg"); } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -4266,7 +4266,7 @@ This is for the larger monitors and possibly full screen viewers.
   HEADER STYLES
   *********************/
   .header .border-image {
-    background-image: url("../images/border-image-1440.jpg"); } }
+    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-1440.jpg"); } }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
