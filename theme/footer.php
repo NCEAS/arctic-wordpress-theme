@@ -4,12 +4,6 @@
 
         <div class="footer-content">
 
-					<div class="">
-						<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand">
-							<img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo_.png" title="Arctic Data Center" alt="Arctic Data Center"/>
-						</a>
-					</div>
-
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
@@ -26,29 +20,38 @@
 						)); ?>
 					</nav>
 
-					<nav role="navigation" class="footer-links">
-						<?php
-						wp_nav_menu(array(
-    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => '',         // class of container (should you choose to use it)
-    					'menu' => __( 'Contact Footer Links', 'auroratheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'contact-footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-						'items_wrap' => '<ul><li class="nav-title">Contact</li>%3$s</ul>', //Show a "Contact" title
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'aurora_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
-          <div>
-            <a href="http://coretrustseal.org" target="_blank">
-              <img src="https://arcticdata.io/wp-content/uploads/coretrustseal_100px.png" class="core-trust-logo"
-                title="A CoreTrustSeal certified repository" />
-            </a>
-          </div>
+					<div class="footer-grid">
+						<div>
+							<a href="<?php echo home_url(); ?>" rel="nofollow" class="brand">
+								<img src="<?php bloginfo( 'template_url' ); ?>/library/images/logo_.png" title="Arctic Data Center" alt="Arctic Data Center"/>
+							</a>
+						</div>
+						
+						<nav role="navigation" class="footer-links contact-menu">
+							<?php
+							wp_nav_menu(array(
+							'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
+							'container_class' => '',         // class of container (should you choose to use it)
+							'menu' => __( 'Contact Footer Links', 'auroratheme' ),   // nav name
+							'menu_class' => 'nav footer-nav cf',            // adding custom nav class
+							'theme_location' => 'contact-footer-links',             // where it's located in the theme
+							'before' => '',                                 // before the menu
+							'after' => '',                                  // after the menu
+							'link_before' => '',                            // before each link
+							'link_after' => '',                             // after each link
+							'items_wrap' => '<ul><li class="nav-title">Contact</li>%3$s</ul>', //Show a "Contact" title
+							'depth' => 0,                                   // limit the depth of the nav
+							'fallback_cb' => 'aurora_footer_links_fallback'  // fallback function
+							)); ?>
+						</nav>
+						<div>
+							<a href="http://coretrustseal.org" target="_blank">
+							<img src="https://arcticdata.io/wp-content/uploads/coretrustseal_100px.png" class="core-trust-logo"
+								title="A CoreTrustSeal certified repository" />
+							</a>
+						</div>
+					</div>
+
         </div>
 						<div class="logos">
 							<a class="nceas-logo" href="http://nceas.ucsb.edu" target="_blank"></a>

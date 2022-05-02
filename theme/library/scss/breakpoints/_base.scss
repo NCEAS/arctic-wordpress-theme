@@ -834,7 +834,7 @@ IMAGE STYLES
 	margin-top: $pad-large;
 
 	a{
-		background-image: url('../images/footer-logos.png');
+		background-image: url('/wp-content/themes/aurora/library/images/footer-logos.png');
 		background-repeat: no-repeat;
 		height: 73px;
 		overflow: hidden;
@@ -900,50 +900,3 @@ SIDEBARS & ASIDES
 	.no-widgets {
 		display: none;
 	}
-
-/*********************
-FOOTER STYLES
-*********************/
-
-.footer {
-	clear: both;
-	background-color: $aurora-gray-blue;
-	color: $text-color;
-	padding: $pad;
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-		.nav-title{
-			color: #666;
-			font-family: $display-fonts;
-		}
-
-	} /* end .footer-links */
-
-	.logos{
-		img{
-			opacity: .8;
-		}
-
-		a:hover, a:focus{
-			opacity: 1;
-			transition: opacity 500ms;
-		}
-	}
-
-}
