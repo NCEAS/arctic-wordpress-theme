@@ -2746,11 +2746,6 @@ probably best not to use it. I mean, were you going to anyway? */
 @media only screen and (min-width: 1240px) {
   #content.big-background-image {
     background-position-y: -900px; } }
-body.home #content {
-  background-color: #ECF6F8; }
-  body.home #content.big-background-image {
-    background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg); }
-
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
