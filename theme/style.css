@@ -2708,6 +2708,10 @@ FOOTER STYLES
   .footer .footer-grid {
     display: flex;
     justify-content: space-evenly; }
+  .footer #menu-footer-about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em; }
 
 /******************************************************************
 Site Name:

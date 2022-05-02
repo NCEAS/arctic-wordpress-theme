@@ -19,12 +19,6 @@ FOOTER STYLES
 	*/
 	.footer-links {
 
-		ul {
-
-			li {}
-
-		}
-
 		.nav-title{
 			color: #666;
 			font-family: $display-fonts;
@@ -48,4 +42,9 @@ FOOTER STYLES
         justify-content: space-evenly;
     }
 
+    #menu-footer-about{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: $pad-large;
+    }
 }
