@@ -16,26 +16,26 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $sans-serif;
-	font-size: 1em;
-	line-height: 1.5;
-	color: $text-color;
-	background-color: $aurora-gray-blue;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: $aurora-gray-blue;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#container{
-	background-color: $white;
+#container {
+  background-color: $white;
 }
-.hidden{
-	display: none;
+.hidden {
+  display: none;
 }
-.warning{
-	color: #c09853;
-	padding: $pad;
-	border: 1px solid #c09853;
-	background-color: #fcf8e3;
+.warning {
+  color: #c09853;
+  padding: $pad;
+  border: 1px solid #c09853;
+  background-color: #fcf8e3;
 }
 
 /********************
@@ -43,156 +43,208 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+.rtl {
+} /* for sites that are read right to left (i.e. hebrew) */
+.home {
+} /* home page */
+.blog {
+} /* blog template page */
+.archive {
+} /* archive page */
+.date {
+} /* date archive page */
+.date-paged-1 {
+} /* replace the number to the corresponding page number */
+.search {
+} /* search page */
+.search-results {
+} /* search result page */
+.search-no-results {
+} /* no results search page */
+.search-paged-1 {
+} /* individual paged search (i.e. body.search-paged-3) */
+.error404 {
+} /* 404 page */
+.single {
+} /* single post page */
+.postid-1 {
+} /* individual post page by id (i.e. body.postid-73) */
+.single-paged-1 {
+} /* individual paged single (i.e. body.single-paged-3) */
+.attachment {
+} /* attatchment page */
+.attachmentid-1 {
+} /* individual attatchment page (i.e. body.attachmentid-763) */
+.attachment-mime-type {
+} /* style mime type pages */
+.author {
+} /* author page */
+.author-nicename {
+} /* user nicename (i.e. body.author-samueladams) */
+.author-paged-1 {
+} /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {
+} /* category page */
+.category-1 {
+} /* individual category page (i.e. body.category-6) */
+.category-paged-1 {
+} /* replace the number to the corresponding page number */
+.tag {
+} /* tag page */
+.tag-slug {
+} /* individual tag page (i.e. body.tag-news) */
+.tag-paged-1 {
+} /* replace the number to the corresponding page number */
+.page-template {
+} /* custom page template page */
+.page-template-page-php {
+} /* individual page template (i.e. body.page-template-contact-php */
+.page-paged-1 {
+} /* replace the number to the corresponding page number */
+.page-parent {
+} /* parent page template */
+.page-child {
+} /* child page template */
+.parent-pageid-1 {
+} /* replace the number to the corresponding page number */
+.logged-in {
+} /* if user is logged in */
+.paged {
+} /* paged items like search results or archives */
+.paged-1 {
+} /* individual paged (i.e. body.paged-3) */
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
-	margin: 0 auto;
+  width: 96%;
+  margin: 0 auto;
 }
-.center{
-	text-align: center;
+.center {
+  text-align: center;
 }
-.clearfix{
-	clear: both;
-	float: none;
+.clearfix {
+  clear: both;
+  float: none;
 }
 
 /*********************
 LINK STYLES
 *********************/
 
-a, a:visited {
-	color: $link-color;
-	text-decoration: none;
+a,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
 
-	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+  /* on hover */
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
 
-	/* on click */
-	&:active {
+  /* on click */
+  &:active {
+  }
 
-	}
-
-	/* mobile tap color */
-	&:link {
-		/*
+  /* mobile tap color */
+  &:link {
+    /*
 		this highlights links on iPhones/iPads.
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
-	}
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
 }
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	text-rendering: optimizelegibility;
-	font-weight: 500;
-	/*
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+  /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
 	*/
 
-	/* removing text decoration from all headline links */
-	a {
-		text-decoration: none;
-		color: $aurora-purple;
-	}
+  /* removing text decoration from all headline links */
+  a {
+    text-decoration: none;
+    color: $aurora-purple;
+  }
 }
 
-h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
-	font-family: $header-fonts;
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+  font-family: $header-fonts;
 }
 
-h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+h2,
+.h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
 }
 
-h3, .h3 {
-	font-size: 1.3em;
+h3,
+.h3 {
+  font-size: 1.3em;
 }
 
-h4, .h4 {
-	font-size: 1.2em;
-	font-weight: normal;
+h4,
+.h4 {
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
-h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+h5,
+.h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .colored,
-a.colored, a:visited.colored, a:link.colored{
-	color: $aurora-green;
+a.colored,
+a:visited.colored,
+a:link.colored {
+  color: $aurora-green;
 }
 
-.suptitle{
-	margin-bottom: 0px;
-    font-weight: normal;
-    font-style: italic;
-    color: #DDD;
+.suptitle {
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-style: italic;
+  color: #ddd;
 
-    + h1{
-    	margin-top: 0px;
-    }
+  + h1 {
+    margin-top: 0px;
+  }
 }
 
 /*********************
 IMAGE STYLES
 *********************/
-.center-img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*********************
@@ -200,92 +252,92 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $white;
-	padding: 0px 0px $pad 0px;
+  background-color: $white;
+  padding: 0px 0px $pad 0px;
 
-	.nav{
-		color: $aurora-purple;
-		font-size: 1.2em;
-		font-family: $display-fonts;
-	}
+  .nav {
+    color: $aurora-purple;
+    font-size: 1.2em;
+    font-family: $display-fonts;
+  }
 
-	.border-image{
-		background-image: url('https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg');
-		background-size: cover;
-		height: 25px;
-		width: 100%;
-		margin-bottom: $pad;
-	}
+  .border-image {
+    background-image: url('https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg');
+    background-size: cover;
+    height: 25px;
+    width: 100%;
+    margin-bottom: $pad;
+  }
 }
 
 .brand {
-	span{
-    	line-height: 70px;
-    	color: #333;
-    	font-family: $brand-fonts;
-    	vertical-align: bottom;
-	}
+  span {
+    line-height: 70px;
+    color: #333;
+    font-family: $brand-fonts;
+    vertical-align: bottom;
+  }
 
-	img{
-		height: 50px;
-		width: auto;
-		margin-right: 10px;
-	}
+  img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+  }
 }
-a.brand{
-	color: #333;
+a.brand {
+  color: #333;
 }
 
-.entry-content .display-text-w-image{
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 400px;
-	padding: 50px;
+.entry-content .display-text-w-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 50px;
 
-	> *{
-		max-width: 1024px;
-		margin-left: auto;
-		margin-right: auto;
-		color: white;
-	}
+  > * {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
 
-	&.light > *{
-		color: #333;
+  &.light > * {
+    color: #333;
 
-		article{
-			background-color: rgba(255, 255, 255, 0.5);
-		}
-	}
-	.read-more{
-    	color: $aurora-light-green;
-    	font-weight: bold;
-	}
-	h1{
-		font-weight: bold;
-		font-size: 3em;
-		font-family: AllerLight;
-		text-align: center;
-		color: #FFF;
-	}
-	.btn.display{
-		border-color: #FFF;
-		background-color: rgba(255,255,255,0.8);
-		font-weight: bold;
-	}
-	article{
-		background-color: rgba(26, 29, 51, 0.8);
-		padding: 3em;
-		border-radius: 4px;
+    article {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .read-more {
+    color: $aurora-light-green;
+    font-weight: bold;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: AllerLight;
+    text-align: center;
+    color: #fff;
+  }
+  .btn.display {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+  }
+  article {
+    background-color: rgba(26, 29, 51, 0.8);
+    padding: 3em;
+    border-radius: 4px;
 
-		a{
-			color: $aurora-green;
-		}
+    a {
+      color: $aurora-green;
+    }
 
-		.btn.display{
-		    color: #a7d7d4;
-    		border: 3px solid #a7d7d4;
-		}
-	}
+    .btn.display {
+      color: #a7d7d4;
+      border: 3px solid #a7d7d4;
+    }
+  }
 }
 
 /*********************
@@ -300,458 +352,486 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.header{
-	nav{
-		width: 100%;
-    	display: none;
-	}
-	#nav-trigger{
-    	margin-top: .5em;
-    	margin-right: .5em;
-    	font-size: 2em;
-    	float: right;
-    }
+.header {
+  nav {
+    width: 100%;
+    display: none;
+  }
+  #nav-trigger {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    font-size: 2em;
+    float: right;
+  }
 }
 
 .nav {
-	border-bottom: 0;
-	margin: 0;
+  border-bottom: 0;
+  margin: 0;
 
-	li {
-		border-bottom: 1px solid #DDD;
+  li {
+    border-bottom: 1px solid #ddd;
 
-		a {
-			display: block;
-			text-decoration: none;
-			padding: 0.75em;
-			color: $aurora-purple;
-			text-align: center;
-		}
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 0.75em;
+      color: $aurora-dark-blue;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2em;
+    }
 
-		&:first-child {}
+    &:first-child {
+    }
 
-		&:last-child {}
+    &:last-child {
+    }
 
-		ul.sub-menu,
-		ul.children {
+    ul.sub-menu,
+    ul.children {
+      display: none;
+      padding-left: 0px;
 
-			display: none;
-			padding-left: 0px;
+      li {
+        background-color: $aurora-purple;
+        border-bottom: 1px solid #ccc;
+        font-size: 0.8em;
 
-			li {
-				background-color: $aurora-purple;
-				border-bottom: 1px solid #ccc;
-				font-size: .8em;
+        &.btn {
+          width: 100%;
+        }
 
-				&.btn{
-					width: 100%;
-				}
+        a {
+          color: #fff;
 
-				a {
-					color: #FFF;
+          &:hover,
+          &:focus {
+          }
 
-					&:hover,
-					&:focus {}
+          &:link {
+          }
+        }
 
-					&:link {}
+        &:first-child {
+        }
 
-				}
+        &:last-child {
+        }
+      }
+    }
 
-				&:first-child {}
+    &.smaller {
+      font-size: 0.8em;
+      line-height: 2.5em;
+    }
+  } /* end .menu li */
 
-				&:last-child {}
-
-			}
-
-		}
-
-		&.smaller{
-		    font-size: .8em;
-    		line-height: 2.5em;
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+    a {
+    }
+  } /* end current highlighters */
 } /* end .nav */
-
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
-		.hentry {
-			margin-bottom: $pad;
+.hentry {
+  margin-bottom: $pad;
 
-			header {
-				padding: 0px 1.3em;
-			}
+  header {
+    padding: 0px 1.3em;
+  }
 
-			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+  footer {
+    padding: 1.5em;
+    border-top: 1px solid $light-gray;
 
-				p {
-					margin: 0;
-				}
-			}
+    p {
+      margin: 0;
+    }
+  }
+} /* end .hentry */
 
-		} /* end .hentry */
+.single-title,
+.page-title,
+.entry-title {
+  margin: 0;
 
-		.single-title,
-		.page-title,
-		.entry-title {
-			margin: 0;
+  font-size: 2.1em;
+  line-height: 1.4em;
+  font-family: $header-fonts;
+}
 
-    		font-size: 2.1em;
-    		line-height: 1.4em;
-    		font-family: $header-fonts;
-		}
+h1.page-title {
+  font-size: 2em;
+  color: $black;
+  font-weight: bold;
+}
+/* If a heading 2 is the first element in an entry, treat is as a subtitle */
+.entry-content > h2:first-child {
+  margin-top: 0px;
+}
 
-		h1.page-title{
-			font-size: 2em;
-			color: $black;
-			font-weight: bold;
-		}
-		/* If a heading 2 is the first element in an entry, treat is as a subtitle */
-		.entry-content > h2:first-child{
-			margin-top: 0px;
-		}
+/* Feed form, such as on category pages */
+.category {
+  .post {
+    border-color: $aurora-gray-blue;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-		/* Feed form, such as on category pages */
-		.category{
+    .entry-header {
+      padding: $pad;
+      padding-left: 0px;
+    }
 
-			.post{
-				border-color: $aurora-gray-blue;
-				margin-top: 1em; margin-bottom: 1em;
+    .entry-title {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: bold;
+    }
 
-				.entry-header{
-					padding: $pad;
-					padding-left: 0px;
-				}
+    .entry-content {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
 
-				 .entry-title{
-					font-size: 1.5em;
-					line-height: 1.5em;
-					font-weight: bold;
-				}
+    /* Featured images */
+    &.has-post-thumbnail .entry-content > img.wp-post-image {
+      float: left;
+      margin-right: 40px;
+      margin-top: 1.5em;
+      max-width: 60%;
+      max-height: 233px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-				.entry-content{
-					padding-left: 0px;
-					padding-top: 0px;
-				}
+    &.has-post-thumbnail .entry-content p {
+      margin: 1.5em 0 1.5em;
+    }
+  }
+}
 
-				/* Featured images */
-				&.has-post-thumbnail .entry-content > img.wp-post-image{
-          float: left;
-          margin-right: 40px;
-	  			margin-top: 1.5em;
-          max-width: 60%;
-          max-height: 233px;
-          padding: 10px;
-          border: 1px solid #CCC;
-          border-radius: 4px;
-				}
+/* Display posts plugin - post feeds */
+.display-posts-listing,
+.display-posts-listing li {
+  list-style: none;
+  padding-left: 0px;
 
-        &.has-post-thumbnail .entry-content p{
-          margin: 1.5em 0 1.5em;
-        }
-			}
-		}
+  .title {
+    @extend .h2;
+    display: block;
+  }
 
-		/* Display posts plugin - post feeds */
-		.display-posts-listing, .display-posts-listing li {
-    		list-style: none;
-		    padding-left: 0px;
+  .date {
+    font-weight: bold;
+  }
+}
 
-		    .title{
-		    	@extend .h2;
-		    	display: block;
-		    }
+.single-title {
+}
 
-		    .date{
-		    	font-weight: bold;
-		    }
-		}
+.page-title {
+}
 
-		.single-title {}
+.entry-title {
+}
 
-		.page-title {}
+.archive-title {
+}
 
-		.entry-title {}
+/* want to style individual post classes? Booya! */
+.post-id {
+} /* post by id (i.e. post-3) */
+.post {
+} /* general post style */
+.page {
+} /* general article on a page style */
+.attachment {
+} /* general style on an attatchment */
+.sticky {
+} /* sticky post style */
+.hentry {
+} /* hentry class */
+.category-slug {
+} /* style by category (i.e. category-videos) */
+.tag-slug {
+} /* style by tag (i.e. tag-news) */
 
-		.archive-title {}
+/* post meta */
+.byline {
+  color: $meta-gray;
+  font-style: italic;
+  margin: 0;
 
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+  time {
+  }
+}
 
-		/* post meta */
-		.byline {
-			color: $meta-gray;
-			font-style: italic;
-			margin: 0;
+.excerpt-read-more {
+  display: block;
+  margin-top: $pad;
+}
 
-			time {}
-		}
+/* entry content */
+.entry-content {
+  padding: 1.5em 1.5em 0;
 
-		.excerpt-read-more{
-			display: block;
-			margin-top: $pad;
-		}
+  p {
+    margin: 0 0 1.5em;
+  }
 
-		/* entry content */
-		.entry-content {
-			padding: 1.5em 1.5em 0;
+  ul,
+  ol,
+  table,
+  dl {
+  }
 
-			p {
-				margin: 0 0 1.5em;
-			}
+  ul,
+  ol {
+    li {
+    }
+  }
 
+  ul {
+    li {
+    }
+  }
 
-			ul, ol, table, dl {}
+  ol {
+    li {
+    }
+  }
 
-			ul, ol {
+  table {
+    width: 100%;
+    border: 1px solid $gray;
+    margin-bottom: 1.5em;
 
-				li {}
+    caption {
+      margin: 0 0 7px;
+      font-size: 0.75em;
+      color: $meta-gray;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
 
-			}
+  tr {
+    border-bottom: 1px solid $gray;
 
-			ul {
+    &:nth-child(even) {
+      background-color: $light-gray;
+    }
+  }
 
-				li {}
+  td {
+    padding: 7px;
+    border-right: 1px solid $gray;
 
-			}
+    &:last-child {
+      border-right: 0;
+    }
+  }
 
-			ol {
+  th {
+    background-color: $light-gray;
+    border-bottom: 1px solid $gray;
+    border-right: 1px solid $gray;
 
-				li {}
+    &:last-child {
+      border-right: 0;
+    }
+  }
 
-			}
+  blockquote {
+    margin: 0 0 1.5em 0.75em;
+    padding: 0 0 0 0.75em;
+    border-left: 3px solid $blue;
+    font-style: italic;
+    color: $meta-gray;
 
-			table {
-				width: 100%;
-				border: 1px solid $gray;
-				margin-bottom: 1.5em;
+    &:before {
+    }
+  }
 
-				caption {
-					margin: 0 0 7px;
-					font-size: 0.75em;
-					color: $meta-gray;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-				}
-			}
+  .aside {
+    color: #666;
+    font-style: normal;
+    font-size: 0.9em;
+    border: 0px;
+    padding: 1em;
+  }
 
-			tr {
-				border-bottom: 1px solid $gray;
+  dl {
+  }
 
-				&:nth-child(even) {
-					background-color: $light-gray;
-				}
-			}
+  dt {
+  }
 
-			td {
-				padding: 7px;
-				border-right: 1px solid $gray;
+  dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em;
+  }
 
-				&:last-child {
-					border-right: 0;
-				}
-			}
+  img {
+    margin: 0 0 1.5em 0;
+    max-width: 100%;
+    height: auto;
+  }
 
-			th {
-				background-color: $light-gray;
-				border-bottom: 1px solid $gray;
-				border-right: 1px solid $gray;
+  h2 img,
+  h3 img,
+  h4 img,
+  h5 img {
+    height: 1em;
+    width: auto;
+  }
 
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
-				font-style: italic;
-				color: $meta-gray;
-
-				&:before {}
-
-			}
-
-			.aside{
-			    color: #666;
-			    font-style: normal;
-			    font-size: .9em;
-			    border: 0px;
-			    padding: 1em;
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
-
-			h2 img, h3 img, h4 img, h5 img{
-				height: 1em;
-				width: auto;
-			}
-
-			/*
+  /*
 			image alignment on a screen this size may be
 			a bit difficult. It's set to start aligning
 			and floating images at the next breakpoint,
 			but it's up to you. Feel free to change it up.
 			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+  .alignleft,
+  img.alignleft {
+  }
+  .alignright,
+  img.alignright {
+  }
+  .aligncenter,
+  img.aligncenter {
+  }
 
-			.size-auto,
-			.size-full,
-			.size-large,
-			.size-medium,
-			.size-thumbnail {
-				max-width: 100%;
-				height: auto;
-			}
+  .size-auto,
+  .size-full,
+  .size-large,
+  .size-medium,
+  .size-thumbnail {
+    max-width: 100%;
+    height: auto;
+  }
 
-			.size-small.size-square{
-				height: 150px; width: 150px;
-			    max-width: 150px;
-    			max-height: 150px;
-    			min-width: 90px;
-    			min-height: 90px;
-			}
+  .size-small.size-square {
+    height: 150px;
+    width: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 90px;
+    min-height: 90px;
+  }
 
-			.circle{
-				border-radius: 50%;
-			}
+  .circle {
+    border-radius: 50%;
+  }
 
-			pre {
-				background: $black;
-				color: $light-gray;
-				font-size: 0.9em;
-				padding: 1.5em;
-				margin: 0 0 1.5em;
-				border-radius: 3px;
-			}
+  pre {
+    background: $black;
+    color: $light-gray;
+    font-size: 0.9em;
+    padding: 1.5em;
+    margin: 0 0 1.5em;
+    border-radius: 3px;
+  }
 
-			.border-image{
-			    height: 300px;
-			    width: 100%;
-			    background-size: cover;
-			    background-repeat: no-repeat;
-			    background-position: 0px 50%;
-			    margin-bottom: 4em;
-			    margin-top: 4em;
-			}
+  .border-image {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    margin-bottom: 4em;
+    margin-top: 4em;
+  }
 
-			/* Publication page */
-			a.publications-view-dataset-link{
-				@extend .btn;
-				padding: .1em .5em !important;
-				margin-left: .5em;
-			}
-			p.publications-citation:nth-child(odd) {
-			    background-color: #EFEFEF;
-			    padding: 1em;
-			}
-			.publications-citation:nth-child(even){
-				padding: 1em;
-			}
+  /* Publication page */
+  a.publications-view-dataset-link {
+    @extend .btn;
+    padding: 0.1em 0.5em !important;
+    margin-left: 0.5em;
+  }
+  p.publications-citation:nth-child(odd) {
+    background-color: #efefef;
+    padding: 1em;
+  }
+  .publications-citation:nth-child(even) {
+    padding: 1em;
+  }
+} /* end .entry-content */
 
-		} /* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  padding: 5px;
 
-		.wp-caption {
-			max-width: 100%;
-			padding: 5px;
+  /* images inside wp-caption */
+  img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: auto;
+  }
 
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: auto;
-			}
+  p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: left;
+  }
+} /* end .wp-caption */
 
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: left;
-			}
+/* image gallery styles */
+.gallery {
+  dl {
+    a {
+    }
 
-		} /* end .wp-caption */
+    img {
+    }
+  }
 
-		/* image gallery styles */
-		.gallery {
+  dt {
+  }
 
-			dl {
+  dd {
+  }
+} /* end .gallery */
 
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-	// the tag output
-	.tags {
-		margin: 0;
-	}
-
-.purple-bg{
-
-	background-color: $aurora-purple;
+/* gallery caption styles */
+.gallery-caption {
 }
 
-.inner-entry-content{
-	@extend .aligncenter;
-	padding: $pad-large;
+.size-full {
+}
+.size-large {
+}
+.size-medium {
+}
+.size-thumbnail {
+}
+
+// the tag output
+.tags {
+  margin: 0;
+}
+
+.purple-bg {
+  background-color: $aurora-purple;
+}
+
+.inner-entry-content {
+  @extend .aligncenter;
+  padding: $pad-large;
 }
 
 /******************************************************************
@@ -760,144 +840,104 @@ PAGE NAVI STYLES
 
 .pagination,
 .wp-prev-next {
-	margin: 1.5em 0;
+  margin: 1.5em 0;
 }
-	.pagination{
-    text-align: center;
+.pagination {
+  text-align: center;
 
-    ul {
-      display: inline-block;
+  ul {
+    display: inline-block;
+    background-color: $white;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    border-radius: 3px;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    border-right: 1px solid $gray;
+  }
+
+  a,
+  span {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    line-height: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.75em;
+    min-width: 1em;
+    display: block;
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  .current {
+    cursor: default;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
       background-color: $white;
-      white-space: nowrap;
-      padding: 0;
-      clear: both;
-      border-radius: 3px;
+      color: $text-color;
     }
+  }
+} /* end .aurora_page_navi */
 
-    li {
-      padding: 0;
-      margin: 0;
-      float: left;
-      display: inline;
-      overflow: hidden;
-      border-right: 1px solid $gray;
-    }
+/* fallback previous & next links */
+.wp-prev-next {
+  ul {
+  }
 
-    a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $blue;
+  .prev-link {
+    float: left;
+  }
 
-      &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
-      }
-    }
-
-    .current{
-    	cursor: default;
-    	color: $text-color;
-
-    	&:hover, &:focus {
-    		background-color: $white;
-    		color: $text-color;
-    	}
-    }
-
-  } /* end .aurora_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .wp-prev-next */
-
-/******************************************************************
-IMAGE STYLES
-******************************************************************/
-.logos{
-	margin-top: $pad-large;
-
-	a{
-		background-image: url('/wp-content/themes/aurora/library/images/footer-logos.png');
-		background-repeat: no-repeat;
-		height: 73px;
-		overflow: hidden;
-		margin-right: $pad-small;
-		display: inline-block;
-	}
-
-	.nceas-logo{
-		width: 65px;
-		background-position: 0px 0px;
-	}
-	.ucsb-logo{
-		width: 87px;
-		background-position: -66px 0px;
-	}
-	.dataone-logo{
-		width: 128px;
-		background-position: -153px 0px;
-	}
-	.ncei-logo{
-		width: 67px;
-		background-position: -282px 0px;
-	}
-	.noaa-logo{
-		width: 65px;
-		background-position: -349px 0px;
-	}
-	.nsf-logo{
-		width: 65px;
-		background-position: 100% 0px;
-	}
-}
+  .next-link {
+    float: right;
+  }
+} /* end .wp-prev-next */
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+}
 
-	.widgettitle {}
+.widgettitle {
+}
 
-	.widget {
+.widget {
+  ul {
+    li {
+      &:first-child {
+      }
 
-		ul {
+      &:last-child {
+      }
 
-			li {
+      a {
+      }
 
-				&:first-child {}
+      /* deep nesting */
+      ul {
+      }
+    }
+  }
+}
 
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
-
-	.no-widgets {
-		display: none;
-	}
+.no-widgets {
+  display: none;
+}

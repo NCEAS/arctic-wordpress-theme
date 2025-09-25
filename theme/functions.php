@@ -150,9 +150,188 @@ function aurora_theme_customizer($wp_customize) {
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
+
+	$wp_customize->add_section(
+		'aurora_footer_settings',
+		array(
+			'title'    => __( 'Footer', 'auroratheme' ),
+			'priority' => 160,
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_acknowledgement_text',
+		array(
+			'default'           => aurora_get_default_footer_ack_text(),
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_acknowledgement_text',
+		array(
+			'label'       => __( 'Acknowledgement Text', 'auroratheme' ),
+			'description' => __( 'Displayed below the footer menus. HTML links are allowed.', 'auroratheme' ),
+			'section'     => 'aurora_footer_settings',
+			'type'        => 'textarea',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_callout_content',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'wp_kses_post',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_callout_content',
+		array(
+			'label'       => __( 'Callout Content', 'auroratheme' ),
+			'description' => __( 'Appears above the footer logos; useful for buttons or short CTAs.', 'auroratheme' ),
+			'section'     => 'aurora_footer_settings',
+			'type'        => 'textarea',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_left_logo_image',
+		array(
+			'default'           => aurora_get_default_left_logo_src(),
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'footer_left_logo_image',
+			array(
+				'label'   => __( 'Left Logo Image', 'auroratheme' ),
+				'section' => 'aurora_footer_settings',
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_left_logo_link',
+		array(
+			'default'           => aurora_get_default_left_logo_link(),
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_left_logo_link',
+		array(
+			'label'   => __( 'Left Logo Link URL', 'auroratheme' ),
+			'section' => 'aurora_footer_settings',
+			'type'    => 'url',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_left_logo_alt',
+		array(
+			'default'           => aurora_get_default_left_logo_alt(),
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_left_logo_alt',
+		array(
+			'label'   => __( 'Left Logo Alt Text', 'auroratheme' ),
+			'section' => 'aurora_footer_settings',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_right_logo_image',
+		array(
+			'default'           => aurora_get_default_right_logo_src(),
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'footer_right_logo_image',
+			array(
+				'label'   => __( 'Right Logo Image', 'auroratheme' ),
+				'section' => 'aurora_footer_settings',
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_right_logo_link',
+		array(
+			'default'           => aurora_get_default_right_logo_link(),
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_right_logo_link',
+		array(
+			'label'   => __( 'Right Logo Link URL', 'auroratheme' ),
+			'section' => 'aurora_footer_settings',
+			'type'    => 'url',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'footer_right_logo_alt',
+		array(
+			'default'           => aurora_get_default_right_logo_alt(),
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'footer_right_logo_alt',
+		array(
+			'label'   => __( 'Right Logo Alt Text', 'auroratheme' ),
+			'section' => 'aurora_footer_settings',
+			'type'    => 'text',
+		)
+	);
 }
 
 add_action( 'customize_register', 'aurora_theme_customizer' );
+
+
+function aurora_get_default_footer_ack_text() {
+	return __( 'This material is based upon work supported by the National Science Foundation under NSF Award Numbers <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1546024" target="_blank">1546024</a> and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2042102" target="_blank">2042102</a>.', 'auroratheme' );
+}
+
+function aurora_get_default_left_logo_src() {
+	return 'https://arcticdata.io/wp-content/uploads/coretrustseal_100px.png';
+}
+
+function aurora_get_default_left_logo_link() {
+	return 'http://coretrustseal.org';
+}
+
+function aurora_get_default_left_logo_alt() {
+	return __( 'A CoreTrustSeal certified repository', 'auroratheme' );
+}
+
+function aurora_get_default_right_logo_src() {
+	return get_template_directory_uri() . '/library/images/logo_.png';
+}
+
+function aurora_get_default_right_logo_link() {
+	return home_url();
+}
+
+function aurora_get_default_right_logo_alt() {
+	return __( 'Arctic Data Center', 'auroratheme' );
+}
 
 
 
@@ -181,13 +360,23 @@ function aurora_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-			'id' => 'top_banner_warning',
-			'name' => __( 'Top Warning Banner (Yellow)', 'auroratheme' ),
-			'description' => __( 'A yellow warning banner that displays at the top of the page above the header.', 'auroratheme' ),
-			'before_widget' => '<div id="%1$s" class="alert alert-warning %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h4>',
-			'after_title' => '</h4>',
+		'id' => 'top_banner_warning',
+		'name' => __( 'Top Warning Banner (Yellow)', 'auroratheme' ),
+		'description' => __( 'A yellow warning banner that displays at the top of the page above the header.', 'auroratheme' ),
+		'before_widget' => '<div id="%1$s" class="alert alert-warning %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
+		'id' => 'footer_logos',
+		'name' => __( 'Footer Logos', 'auroratheme' ),
+		'description' => __( 'Displays widgets inside the footer logo area; use Image widgets to add linked logos.', 'auroratheme' ),
+		'before_widget' => '<span id="%1$s" class="footer-logo %2$s">',
+		'after_widget' => '</span>',
+		'before_title' => '',
+		'after_title' => '',
 	));
 	
 

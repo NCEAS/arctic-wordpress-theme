@@ -3,12 +3,36 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	background-color: $aurora-gray-blue;
-	color: $text-color;
-	padding: $pad;
+  clear: both;
+  background-color: $aurora-light-blue;
+  color: $text-color;
+  padding: $pad;
 
-	/*
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 900px;
+    align-items: center;
+  }
+
+  .footer-callout {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: $pad 0;
+    color: $aurora-dark-blue;
+  }
+
+  .acknowledgement-text {
+    font-size: 1.15rem;
+    color: $aurora-purple;
+    margin: 0 $pad;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
 	you'll want to style the footer nav
@@ -17,34 +41,36 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
-
-		.nav-title{
-			color: #666;
-			font-family: $display-fonts;
-		}
-
-	} /* end .footer-links */
-
-	.logos{
-		img{
-			opacity: .8;
-		}
-
-		a:hover, a:focus{
-			opacity: 1;
-			transition: opacity 500ms;
-		}
-	}
-
-    .footer-grid{
-        display: flex;
-        justify-content: space-evenly;
+  .footer-links {
+    .nav-title {
+      color: #666;
+      font-family: $display-fonts;
     }
+  } /* end .footer-links */
 
-    #menu-footer-about{
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: $pad-large;
+  .logos {
+    // flexible vertical layout, where the number of children can vary
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: $pad;
+    margin-bottom: $pad;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    img {
+      opacity: 0.9;
+      max-height: 60px;
+      width: auto;
+      max-width: 200px;
     }
+  }
+
+  #menu-footer-about {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
