@@ -3824,7 +3824,7 @@ PAGE NAVI STYLES
 .wp-prev-next .prev-link {
   float: left; }
 .wp-prev-next .next-link {
-  float: right;  }
+  float: right; }
 
 /* end .wp-prev-next */
 /******************************************************************
@@ -4252,7 +4252,7 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; }
+    width: 80%; }
 
   .inner-entry-content {
     max-width: 960px;
