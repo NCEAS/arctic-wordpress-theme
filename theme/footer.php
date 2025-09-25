@@ -48,7 +48,7 @@
 			        	$left_logo_link = $left_logo_link ? esc_url( $left_logo_link ) : '';
 			        	$left_logo_alt = esc_attr( $left_logo_alt );
 			        	if ( $left_logo_link ) : ?>
-			          <a href="<?php echo $left_logo_link; ?>" target="_blank" rel="noopener">
+			          <a href="<?php echo $left_logo_link; ?>" rel="nofollow" class="brand">
 			            <img src="<?php echo $left_logo_src; ?>" alt="<?php echo $left_logo_alt; ?>"
 			              class="footer-logo-image footer-logo-image--left" />
 			          </a>
