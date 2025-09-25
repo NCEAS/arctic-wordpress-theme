@@ -457,8 +457,9 @@ POSTS & CONTENT STYLES
 				&.has-post-thumbnail .entry-content > img.wp-post-image{
           float: left;
           margin-right: 40px;
-          width: auto;
-          height: 233px;
+	  			margin-top: 1.5em;
+          max-width: 60%;
+          max-height: 233px;
           padding: 10px;
           border: 1px solid #CCC;
           border-radius: 4px;

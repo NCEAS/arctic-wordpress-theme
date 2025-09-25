@@ -43,7 +43,7 @@
 
 								<section class="entry-content cf">
 
-									<?php the_post_thumbnail( 'aurora-thumb-300' ); ?>
+									<?php the_post_thumbnail( 'aurora-thumb-600' ); ?>
 
 									<?php the_excerpt(); ?>
 

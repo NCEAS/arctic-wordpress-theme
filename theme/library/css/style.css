@@ -472,32 +472,32 @@ FONT FACE (IN YOUR FACE)
 *********************/
 @font-face {
   font-family: 'Aller';
-  src: url("../../library/fonts/aller_rg-webfont.eot");
-  src: url("../../library/fonts/aller_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/aller_rg-webfont.woff2") format("woff2"), url("../../library/fonts/aller_rg-webfont.woff") format("woff"), url("../../library/fonts/aller_rg-webfont.ttf") format("truetype"), url("../../library/fonts/aller_rg-webfont.svg#allerregular") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.eot");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.woff2") format("woff2"), url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.woff") format("woff"), url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.ttf") format("truetype"), url("/wp-content/themes/aurora/library/fonts/aller_rg-webfont.svg#allerregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'AllerBold';
-  src: url("../../library/fonts/aller_bd-webfont.eot");
-  src: url("../../library/fonts/aller_bd-webfont.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/aller_bd-webfont.woff2") format("woff2"), url("../../library/fonts/aller_bd-webfont.woff") format("woff"), url("../../library/fonts/aller_bd-webfont.ttf") format("truetype"), url("../../library/fonts/aller_bd-webfont.svg#allerbold") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.eot");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.woff2") format("woff2"), url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.woff") format("woff"), url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.ttf") format("truetype"), url("/wp-content/themes/aurora/library/fonts/aller_bd-webfont.svg#allerbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'AllerItalic';
-  src: url("../../library/fonts/aller_it-webfont.eot");
-  src: url("../../library/fonts/aller_it-webfont.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/aller_it-webfont.woff2") format("woff2"), url("../../library/fonts/aller_it-webfont.woff") format("woff"), url("../../library/fonts/aller_it-webfont.ttf") format("truetype"), url("../../library/fonts/aller_it-webfont.svg#alleritalic") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.eot");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.woff2") format("woff2"), url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.woff") format("woff"), url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.ttf") format("truetype"), url("/wp-content/themes/aurora/library/fonts/aller_it-webfont.svg#alleritalic") format("svg");
   font-weight: normal;
   font-style: italic; }
 @font-face {
   font-family: 'AllerBoldItalic';
-  src: url("../../library/fonts/aller_bdit-webfont.eot");
-  src: url("../../library/fonts/aller_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/aller_bdit-webfont.woff2") format("woff2"), url("../../library/fonts/aller_bdit-webfont.woff") format("woff"), url("../../library/fonts/aller_bdit-webfont.ttf") format("truetype"), url("../../library/fonts/aller_bdit-webfont.svg#allerbold_italic") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.eot");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.woff2") format("woff2"), url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.woff") format("woff"), url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.ttf") format("truetype"), url("/wp-content/themes/aurora/library/fonts/aller_bdit-webfont.svg#allerbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 @font-face {
   font-family: 'AllerLight';
-  src: url("../../library/fonts/aller_lt-webfont.eot");
-  src: url("../../library/fonts/aller_lt-webfont.eot?#iefix") format("embedded-opentype"), url("../../library/fonts/aller_lt-webfont.woff2") format("woff2"), url("../../library/fonts/aller_lt-webfont.woff") format("woff"), url("../../library/fonts/aller_lt-webfont.ttf") format("truetype"), url("../../library/fonts/aller_lt-webfont.svg#aller_lightregular") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.eot");
+  src: url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.woff2") format("woff2"), url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.woff") format("woff"), url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.ttf") format("truetype"), url("/wp-content/themes/aurora/library/fonts/aller_lt-webfont.svg#aller_lightregular") format("svg");
   font-weight: lighter;
   font-style: normal; }
 /*!
@@ -508,8 +508,8 @@ FONT FACE (IN YOUR FACE)
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("/wp-content/themes/aurora/library/fonts/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -2679,6 +2679,40 @@ width: calc-percent(650px, 1000px);
 both compile to:
 width: 65%;
 *********************/
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+  background-color: #b8cad2;
+  color: #333333;
+  padding: 1em;
+  /*
+  if you checked out the link above:
+  http://www.alistapart.com/articles/organizing-mobile/
+  you'll want to style the footer nav
+  a bit more in-depth. Remember to keep
+  it simple because you'll have to
+  override these styles for the desktop
+  view.
+  */
+  /* end .footer-links */ }
+  .footer .footer-links .nav-title {
+    color: #666;
+    font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .footer .logos img {
+    opacity: .8; }
+  .footer .logos a:hover, .footer .logos a:focus {
+    opacity: 1;
+    transition: opacity 500ms; }
+  .footer .footer-grid {
+    display: flex;
+    justify-content: space-evenly; }
+  .footer #menu-footer-about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -2725,7 +2759,7 @@ probably best not to use it. I mean, were you going to anyway? */
   margin-top: -135px;
   padding-top: 150px;
   background-image: url(https://arcticdata.io/wp-content/uploads/fisherman-greenland-light-scaled.jpg);
-  background-color: #5c68a8;
+  background-color: #8897D2;
   background-size: cover;
   background-repeat: repeat-x;
   color: #1f254f; }
@@ -2746,6 +2780,14 @@ probably best not to use it. I mean, were you going to anyway? */
 @media only screen and (min-width: 1240px) {
   #content.big-background-image {
     background-position-y: -900px; } }
+body.home #content {
+  background-color: #ECF6F8; }
+  body.home #content.big-background-image {
+    background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg);
+    background-size: contain;
+    background-position-x: 0;
+    background-position-y: 0; }
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -3404,7 +3446,7 @@ HEADER STYLES
   .header .nav {
     color: #1f254f;
     font-size: 1.2em;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .header .border-image {
     background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg");
     background-size: cover;
@@ -3568,8 +3610,9 @@ h1.page-title {
   .category .post.has-post-thumbnail .entry-content > img.wp-post-image {
     float: left;
     margin-right: 40px;
-    width: auto;
-    height: 233px;
+    margin-top: 1.5em;
+    max-width: 60%;
+    max-height: 233px;
     padding: 10px;
     border: 1px solid #CCC;
     border-radius: 4px; }
@@ -3781,7 +3824,7 @@ PAGE NAVI STYLES
 .wp-prev-next .prev-link {
   float: left; }
 .wp-prev-next .next-link {
-  float: right; }
+  float: right;  }
 
 /* end .wp-prev-next */
 /******************************************************************
@@ -3790,7 +3833,7 @@ IMAGE STYLES
 .logos {
   margin-top: 2em; }
   .logos a {
-    background-image: url("../images/footer-logos.png");
+    background-image: url("/wp-content/themes/aurora/library/images/footer-logos.png");
     background-repeat: no-repeat;
     height: 73px;
     overflow: hidden;
@@ -3823,33 +3866,6 @@ SIDEBARS & ASIDES
 
 .no-widgets {
   display: none; }
-
-/*********************
-FOOTER STYLES
-*********************/
-.footer {
-  clear: both;
-  background-color: #b8cad2;
-  color: #333333;
-  padding: 1em;
-  /*
-  if you checked out the link above:
-  http://www.alistapart.com/articles/organizing-mobile/
-  you'll want to style the footer nav
-  a bit more in-depth. Remember to keep
-  it simple because you'll have to
-  override these styles for the desktop
-  view.
-  */
-  /* end .footer-links */ }
-  .footer .footer-links .nav-title {
-    color: #666;
-    font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .footer .logos img {
-    opacity: .8; }
-  .footer .logos a:hover, .footer .logos a:focus {
-    opacity: 1;
-    transition: opacity 500ms; }
 
 /*********************
 LARGER MOBILE DEVICES

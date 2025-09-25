@@ -53,7 +53,7 @@
 					</div>
 
         </div>
-						<div class="logos">
+						<div class="logos"> 
 							<a class="nceas-logo" href="http://nceas.ucsb.edu" target="_blank"></a>
 							<a class="ucsb-logo" href="http://ucsb.edu" target="_blank"></a>
 							<a class="dataone-logo" href="https://dataone.org" target="_blank"></a>
@@ -62,7 +62,7 @@
 							<a class="nsf-logo" href="http://nsf.gov" target="_blank"></a>
 						</div>
 						<p class="smaller center">
-							This material is based upon work supported by the National Science Foundation under <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1546024" target="_blank">NSF Award Number 1546024</a>
+							This material is based upon work supported by the National Science Foundation under NSF Award Numbers <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1546024" target="_blank">1546024</a> and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2042102" target="_blank">2042102</a>.
 						</p>
 					</div>
 				</div>
