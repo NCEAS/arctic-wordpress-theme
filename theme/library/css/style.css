@@ -2686,7 +2686,8 @@ FOOTER STYLES
   clear: both;
   background-color: #f1f9fa;
   color: #333333;
-  padding: 1em;
+  padding: 2em 0 1em 0;
+  box-shadow: inset 0 4px 6px -6px #b8cad2;
   /*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -2716,8 +2717,10 @@ FOOTER STYLES
     max-width: 500px;
     width: 100%; }
   .footer .footer-links .nav-title {
-    color: #666;
+    color: #365e78;
     font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .footer .footer-links li a {
+    color: #365e78; }
   .footer .logos {
     display: flex;
     flex-direction: row;
@@ -2805,12 +2808,13 @@ probably best not to use it. I mean, were you going to anyway? */
   #content.big-background-image {
     background-position-y: -900px; } }
 body.home #content {
-  background-color: #ECF6F8; }
+  background-color: #ecf6f8; }
   body.home #content.big-background-image {
     background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg);
     background-size: contain;
     background-position-x: 0;
-    background-position-y: 0; }
+    background-position-y: 0;
+    margin-bottom: -5px; }
 
 /*********************
 IMPORTING MODULES
@@ -3541,14 +3545,8 @@ HEADER STYLES
   padding: 0px 0px 1em 0px; }
   .header .nav {
     color: #1f254f;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: "AllerLight", "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .header .border-image {
-    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg");
-    background-size: cover;
-    height: 25px;
-    width: 100%;
-    margin-bottom: 1em; }
 
 .brand span {
   line-height: 70px;
@@ -3610,14 +3608,16 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-.header nav {
-  width: 100%;
-  display: none; }
-.header #nav-trigger {
-  margin-top: 0.5em;
-  margin-right: 0.5em;
-  font-size: 2em;
-  float: right; }
+.header {
+  padding-top: 1.5em; }
+  .header nav {
+    width: 100%;
+    display: none; }
+  .header #nav-trigger {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    font-size: 2em;
+    float: right; }
 
 .nav {
   border-bottom: 0;
@@ -3631,7 +3631,7 @@ and more scalable.
       display: block;
       text-decoration: none;
       padding: 0.75em;
-      color: #365e78;
+      color: #1f254f;
       text-align: center;
       font-weight: 500;
       font-size: 1.2em; }
@@ -3835,14 +3835,6 @@ h1.page-title {
     padding: 1.5em;
     margin: 0 0 1.5em;
     border-radius: 3px; }
-  .entry-content .border-image {
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 50%;
-    margin-bottom: 4em;
-    margin-top: 4em; }
   .entry-content a.publications-view-dataset-link {
     padding: 0.1em 0.5em !important;
     margin-left: 0.5em; }
@@ -4075,7 +4067,8 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  a:focus, a:hover {
+  a:focus,
+  a:hover {
     color: #146660;
     transition: color 500ms; }
 
@@ -4092,16 +4085,16 @@ you can add resource intensive styles.
       float: left;
       position: relative;
       border-bottom: 0px;
-      /*
-      plan your menus and drop-downs wisely.
-      */
+    /*
+		plan your menus and drop-downs wisely.
+		*/
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+      /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
       .nav li:last-child .sub-menu {
         right: 10px; }
       .nav li ul.sub-menu,
@@ -4115,11 +4108,11 @@ you can add resource intensive styles.
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
+        /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/ }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
             border-right: 0;
@@ -4190,7 +4183,8 @@ you can add resource intensive styles.
       width: 100%;
       display: block;
       min-width: 100%; }
-    .entry-content .side-menu ~ *, .entry-content .side-menu ~ p {
+    .entry-content .side-menu ~ *,
+    .entry-content .side-menu ~ p {
       margin-left: 25%;
       width: 75%;
       display: block; }
@@ -4219,8 +4213,6 @@ you can add resource intensive styles.
   *********************/
   .header {
     /* Take nav out of mobile-style */ }
-    .header .border-image {
-      background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-768.jpg"); }
     .header #nav-trigger {
       display: none; }
     .header nav {
@@ -4318,9 +4310,7 @@ you can add resource intensive styles.
 
   /*********************
   HEADER STYLES
-  *********************/
-  .header .border-image {
-    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-1240.jpg"); } }
+  *********************/ }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -4338,9 +4328,7 @@ This is for the larger monitors and possibly full screen viewers.
   ******************************************************************/
   /*********************
   HEADER STYLES
-  *********************/
-  .header .border-image {
-    background-image: url("https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-1440.jpg"); } }
+  *********************/ }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

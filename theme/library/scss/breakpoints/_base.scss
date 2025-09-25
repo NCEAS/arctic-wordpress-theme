@@ -257,16 +257,8 @@ HEADER STYLES
 
   .nav {
     color: $aurora-purple;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: $display-fonts;
-  }
-
-  .border-image {
-    background-image: url('https://arcticdata.io/wp-content/themes/aurora/library/images/border-image-481.jpg');
-    background-size: cover;
-    height: 25px;
-    width: 100%;
-    margin-bottom: $pad;
   }
 }
 
@@ -353,6 +345,7 @@ and more scalable.
 */
 
 .header {
+  padding-top: 1.5em;
   nav {
     width: 100%;
     display: none;
@@ -376,7 +369,7 @@ and more scalable.
       display: block;
       text-decoration: none;
       padding: 0.75em;
-      color: $aurora-dark-blue;
+      color: $aurora-purple;
       text-align: center;
       font-weight: 500;
       font-size: 1.2em;
@@ -745,16 +738,6 @@ h1.page-title {
     padding: 1.5em;
     margin: 0 0 1.5em;
     border-radius: 3px;
-  }
-
-  .border-image {
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 50%;
-    margin-bottom: 4em;
-    margin-top: 4em;
   }
 
   /* Publication page */

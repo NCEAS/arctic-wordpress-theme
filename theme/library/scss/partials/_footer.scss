@@ -6,7 +6,10 @@ FOOTER STYLES
   clear: both;
   background-color: $aurora-light-blue;
   color: $text-color;
-  padding: $pad;
+  padding: $pad-large 0 $pad 0;
+
+  // slight inner shadow at top using aurora-gray-blue
+  box-shadow: inset 0 4px 6px -6px $aurora-gray-blue;
 
   .footer-grid {
     display: flex;
@@ -43,8 +46,11 @@ FOOTER STYLES
 	*/
   .footer-links {
     .nav-title {
-      color: #666;
+      color: $aurora-dark-blue;
       font-family: $display-fonts;
+    }
+    li a {
+      color: $aurora-dark-blue;
     }
   } /* end .footer-links */
 

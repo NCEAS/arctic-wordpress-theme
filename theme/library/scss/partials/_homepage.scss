@@ -1,11 +1,11 @@
-body.home #content{
+body.home #content {
+  background-color: #ecf6f8;
 
- background-color: #ECF6F8;
-
- &.big-background-image{
-  background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg);
-  background-size: contain;
-  background-position-x: 0;
-  background-position-y: 0;
- }
+  &.big-background-image {
+    background-image: url(https://arcticdata.io/wp-content/uploads/home-page-background.jpg);
+    background-size: contain;
+    background-position-x: 0;
+    background-position-y: 0;
+    margin-bottom: -5px;
+  }
 }
