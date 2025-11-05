@@ -9,37 +9,36 @@ you can just remove this stylesheet.
 
 ******************************************************************/
 
-
-
 // alerts and notices
 .alert {
-    padding: 8px 35px 8px 14px;
-    margin-bottom: 20px;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-    background-color: #fcf8e3;
-    border: 1px solid #fbeed5;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    color: #c09853;
-    
-    h4{
-    	margin-bottom: 0px;
-    	font-weight: bold;
-    	margin-top: 0px;
-    }
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+
+  h4 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
 }
 
 .alert-warning {
-    color: #c09853;
+  color: #c09853;
 }
 
-.alert-success{
-	color: #468847;
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
 }
 
-.header > .alert{
-	margin-bottom: 0px;
+.header > .alert {
+  margin-top: -1.5rem;
+  position: relative;
 }
