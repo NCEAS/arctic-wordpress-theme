@@ -1,13 +1,16 @@
 @charset "UTF-8";
-/******************************************************************
+/*
 Theme Name: Aurora
 Theme URI: https://github.com/laurenwalker/arctic-wordpress-theme
 Description: Based on the Bones Development Theme
-Author URI: http://www.nceas.ucsb.edu/ecoinformatics
-Version: 1.0
-
-
-
+Author: https://arcticdata.io/
+Version: 1.1
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 7.0
+License: Apache-2.0
+License URI: https://www.apache.org/licenses/LICENSE-2.0
+*/
 /********************** 
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
@@ -2857,7 +2860,8 @@ you can just remove this stylesheet.
   border-color: #d6e9c6; }
 
 .header > .alert {
-  margin-bottom: 0px; }
+  margin-top: -1.5rem;
+  position: relative; }
 
 /******************************************************************
 Site Name:
