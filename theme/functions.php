@@ -473,4 +473,14 @@ add_filter( 'wp_prepare_themes_for_js', function( $prepared_themes ) {
   return $prepared_themes;
 } );
 
+/*
+This filter hides upgrade notices for aurora in the WordPress admin.
+*/
+add_filter( 'site_transient_update_themes', function( $transient ) {
+    if ( isset( $transient->response['aurora'] ) ) {
+        unset( $transient->response['aurora'] );
+    }
+    return $transient;
+} )
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
