@@ -142,6 +142,9 @@ function aurora_scripts_and_styles() {
 
 		//adding scripts file in the footer
 		wp_register_script( 'aurora-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+		wp_localize_script( 'aurora-js', 'auroraTheme', array(
+			'orcidIconUrl' => get_stylesheet_directory_uri() . '/library/images/orcid_64x64.png',
+		) );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'aurora-modernizr' );

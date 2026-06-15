@@ -460,4 +460,27 @@ function aurora_fonts() {
 
 add_action('wp_enqueue_scripts', 'aurora_fonts');
 
+/*
+This filter hides wp-content/themes/_aurora-backups from the list of themes in the WordPress admin.
+_aurora-backups is created automatically by the theme editor
+*/
+add_filter( 'wp_prepare_themes_for_js', function( $prepared_themes ) {
+  foreach ( $prepared_themes as $slug => $theme ) {
+    if ( str_starts_with( $slug, '_aurora-backups/' ) ) {
+      unset( $prepared_themes[$slug] );
+    }
+  }
+  return $prepared_themes;
+} );
+
+/*
+This filter hides upgrade notices for aurora in the WordPress admin.
+*/
+add_filter( 'site_transient_update_themes', function( $transient ) {
+    if ( isset( $transient->response['aurora'] ) ) {
+        unset( $transient->response['aurora'] );
+    }
+    return $transient;
+} )
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

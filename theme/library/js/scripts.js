@@ -136,7 +136,9 @@ function mobileNav() {
 //Inserts the ORCID icon in the sign-in button in the top navigation
 function insertOrcidIcon() {
   $('.nav .login.btn a').prepend(
-    '<img src="/wp-content/themes/theme/library/images/orcid_64x64.png" class="icon icon-on-left" />'
+    '<img src="' +
+      auroraTheme.orcidIconUrl +
+      '" class="icon icon-on-left" />'
   );
 }
 
